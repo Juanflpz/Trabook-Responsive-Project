@@ -10,24 +10,24 @@ export default function Navbar(props) {
                         <img className="" src={require(`../images/icons/${props.image}`)} alt="Logo-icon"/>
                     </li>
                     <li>
-                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Home</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">{props.li1}</a>
                     </li>
                     <li>
-                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">About</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">{props.li2}</a>
                     </li>
                     <li>
-                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Destination</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">{props.li3}</a>
                     </li>
                     <li>
-                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Tour</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">{props.li4}</a>
                     </li>
                     <li>
-                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Blog</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">{props.li5}</a>
                     </li>
                     <li className="sign-up">
                         <div className="btn-group mt-4" role="group">
-                            <a href="#" id="btn-login" className="btn btn-lg mr-2 mb-4">Login</a>
-                            <a href="#" id="btn-signup" className="btn btn-lg rounded-3 ms-2 mb-4">Sign up</a>
+                            <a href="#" id="btn-login" className="btn btn-lg mr-2 mb-4">{props.a1}</a>
+                            <a href="#" id="btn-signup" className="btn btn-lg rounded-3 ms-2 mb-4">{props.a2}</a>
                         </div>
                     </li>
                 </ul>

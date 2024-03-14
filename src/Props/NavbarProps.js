@@ -1,4 +1,4 @@
-const datos = {
+const data = {
     li1: 'Home',
     li2: 'About',
     li3: 'Destination',
@@ -9,4 +9,4 @@ const datos = {
     image: 'Logo-icon.png'
 };
 
-export default datos;
+export default data;
