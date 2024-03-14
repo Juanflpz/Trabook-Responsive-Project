@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/GetStarted.css'
 
 export default function GetStarted() {
     return (
@@ -7,12 +8,12 @@ export default function GetStarted() {
                 <div class="row">
                     <div class="col-md-6" style="margin-top: 80px;">
                         <h1 style="font-size: 75px;">Get started your exciting <span class="orange-color">journey </span>with us.</h1>
-                        <p class="mb-4 mt-5 text-muted" style="font-size: 25px">A Team of experienced tourism professionals will<br>provide you with the best advice and tips for your<br>desire place.</p>
+                        <p class="mb-4 mt-5 text-muted" style="font-size: 25px">A Team of experienced tourism professionals will<br/>provide you with the best advice and tips for your<br/>desire place.</p>
                         <a href="#" id="btn-discover" class="mt-5 btn btn-lg">Discover now</a>
                     </div>
                     <div class="position-relative ms-0 col-md-6" style="margin-left: 10px; margin-top: 80px;">
-                        <img src="img/Main.png" class="img-fluid" alt="main-img-background">
-                        <img src="img/Background-main.png" class="overlay-image" alt="main-img">
+                        <img src="img/Main.png" class="img-fluid" alt="main-img-background"/>
+                        <img src="img/Background-main.png" class="overlay-image" alt="main-img"/>
                     </div>
                 </div>
                 <div  style="margin-bottom: 100px;">

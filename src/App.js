@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Component from './Component';
 import Navbar from './Components/Navbar';
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar></Navbar>
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -25,5 +25,6 @@ function App() {
     </div>
   );
 }
+//<img src={logo} className="App-logo" alt="logo" />
 
 export default App;

@@ -1,32 +1,33 @@
 import React from 'react'
+import '../styles/Navbar.css'
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
         <div>
-            <nav class="m-0 p-0" style="height: 13%; background-color: #FDFCFA;">
-                <ul class="d-flex flex-row list-unstyled m-1 p-2 align-items-center justify-content-center">
-                    <li class="" style="margin-right: 200px;">
-                        <img class="" src="icons/Logo-icon.png"/>
+            <nav className="m-0 p-0">
+                <ul className="d-flex flex-row list-unstyled m-1 p-2 align-items-center justify-content-center">
+                    <li className="logo-nav">
+                        <img className="" src={require(`../images/icons/${props.image}`)} alt="Logo-icon"/>
                     </li>
                     <li>
-                        <a class="fs-5 nav-link font-weight-bold text-dark" href="#">Home</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Home</a>
                     </li>
                     <li>
-                        <a class="fs-5 nav-link font-weight-bold text-dark" href="#">About</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">About</a>
                     </li>
                     <li>
-                        <a class="fs-5 nav-link font-weight-bold text-dark" href="#">Destination</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Destination</a>
                     </li>
                     <li>
-                        <a class="fs-5 nav-link font-weight-bold text-dark" href="#">Tour</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Tour</a>
                     </li>
                     <li>
-                        <a class="fs-5 nav-link font-weight-bold text-dark" href="#">Blog</a>
+                        <a className="fs-5 nav-link font-weight-bold text-dark" href="#">Blog</a>
                     </li>
-                    <li style="margin-left: 150px;">
-                        <div class="btn-group mt-4" role="group">
-                            <a href="#" id="btn-login" class="btn btn-lg mr-2 mb-4">Login</a>
-                            <a href="#" id="btn-signup" class="btn btn-lg rounded-3 ms-2 mb-4">Sign up</a>
+                    <li className="sign-up">
+                        <div className="btn-group mt-4" role="group">
+                            <a href="#" id="btn-login" className="btn btn-lg mr-2 mb-4">Login</a>
+                            <a href="#" id="btn-signup" className="btn btn-lg rounded-3 ms-2 mb-4">Sign up</a>
                         </div>
                     </li>
                 </ul>

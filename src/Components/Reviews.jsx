@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Reviews.css'
 
 export default function Reviews() {
     return (

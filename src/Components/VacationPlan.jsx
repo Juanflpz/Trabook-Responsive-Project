@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/VacationPlan.css'
 
 export default function VacationPlan() {
     return (

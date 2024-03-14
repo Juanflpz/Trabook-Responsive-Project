@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Deals.css'
 
 export default function Deals() {
     return (

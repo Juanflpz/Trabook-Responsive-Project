@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Needs.css'
 
 export default function Needs() {
     return (
