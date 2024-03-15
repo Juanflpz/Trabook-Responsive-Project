@@ -1,0 +1,35 @@
+#subscribe-box {
+    position: relative;
+    border: solid 1 black;
+    margin-bottom: 100px;
+    padding: 0;
+    background-color: #FA7436; 
+    color: white;
+    height: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    border-radius: 13px;
+    z-index: 1;
+    text-align: center;
+}
+
+.social-media a {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-media i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    background-color: #fa7436;
+}
+
+.social-media a:hover i {
+    color: white;
+}
