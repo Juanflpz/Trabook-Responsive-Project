@@ -10,3 +10,14 @@ nav {
 .sign-up {
     margin-left: 150px;
 }
+
+#btn-signup {
+    background-color: #FA7435;
+    color: white;
+    width: 155px;
+}
+
+#btn-login {
+    color: #FA7435;
+    width: 155px;
+}

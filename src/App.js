@@ -14,8 +14,8 @@ function App() {
         li3={navbarData.li3}
         li4={navbarData.li4}
         li5={navbarData.li5}
-        a1={navbarData.li2}
-        a2={navbarData.li2}
+        a1={navbarData.a1}
+        a2={navbarData.a2}
       />
     </div>
   );
