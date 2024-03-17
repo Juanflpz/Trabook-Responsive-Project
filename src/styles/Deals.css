@@ -7,8 +7,11 @@
     font-size: 2.5vh;
 }
 
+.title {
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
 .container {
-    margin-top: 80px;
 }
 
 .centered-title {
@@ -64,6 +67,10 @@ p {
 
 .arrows button:active i {
     color: #fa7436;
+}
+
+.arrows {
+    margin-bottom: 5vh;
 }
 
 .discounts-carousel-card {

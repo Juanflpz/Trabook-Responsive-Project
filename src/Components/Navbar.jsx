@@ -6,7 +6,7 @@ export default function Navbar(props) {
     return (
         <div>
             <nav className="m-0 p-0">
-                <ul className="d-flex flex-row list-unstyled m-1 align-items-center justify-content-center">
+                <ul className="d-flex flex-row list-unstyled align-items-center justify-content-center">
                     <li className="logo-nav">
                         <img className="" src={require(`../images/icons/${props.image}`)} alt="Logo-icon"/>
                     </li>

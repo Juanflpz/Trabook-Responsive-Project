@@ -5,7 +5,7 @@ export default function Deals({ cards }) {
     return (
         <section id="destination">
             <div className="container col-xxl-8">
-                <div className="row">
+                <div className="title row">
                     <h3 className="centered-title">Exclusive <span className="orange-color">deals & discounts</span></h3>
                     <p className="prf">Discover our fantastic early booking discounts<br />& start planning your journey.</p>
                 </div>

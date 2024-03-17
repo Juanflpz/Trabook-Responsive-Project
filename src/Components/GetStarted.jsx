@@ -6,7 +6,7 @@ export default function GetStarted(props) {
     return (
         <section id="get-started">
             <div className="container col-xxl-8">
-                <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div className="row flex-lg-row-reverse align-items-center g-5">
                     <div className="col-10 col-sm-8 col-lg-6">
                         <img src={require(`../images/img/${props.image}`)} className="traveler-img d-block mx-lg-auto img-fluid" loading="lazy" alt="Traveler"/>
                     </div>
@@ -23,7 +23,7 @@ export default function GetStarted(props) {
             </div>
             <section>
                 <div className="container d-flex justify-content-center">
-                    <div className="card w-75 align-items-center px-3 py-2" id="floating-card">
+                    <div className="card w-75 align-items-center px-3" id="floating-card">
                         <div className="row">
                             <div className="col-lg">
                                 <div className="card-body row text-start">
