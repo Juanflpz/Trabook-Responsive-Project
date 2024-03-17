@@ -3,9 +3,11 @@
 }
 
 #btn-discover {
+    background-color: transparent;
     color: #FA7435;
     border-color: #FA7435;
     width: 180px;
+    border-radius: 5px;
 }
 
 #get-started {
@@ -13,14 +15,7 @@
 }
 
 #title {
-    font-size: 75px;
-}
-
-#btn-discover {
-    background-color: transparent;
-    color: #fa7436;
-    border: 1px solid #fa7436;
-    border-radius: 5px;
+    font-size: 70px;
 }
 
 #btn-discover:hover {

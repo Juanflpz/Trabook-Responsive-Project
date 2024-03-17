@@ -26,9 +26,9 @@ export default function Navbar(props) {
                         <a className="mx-3 fs-5 nav-link font-weight-bold text-dark" href="#">{props.li5}</a>
                     </li>
                     <li className="sign-up">
-                        <div className="btn-group mt-4" role="group">
-                            <a href="#" id="btn-login" className="btn btn-lg mr-2 mb-4">{props.a1}</a>
-                            <a href="#" id="btn-signup" className="btn btn-lg rounded-3 ms-2 mb-4">{props.a2}</a>
+                        <div className="btn-group mt-4 mb-4" role="group">
+                            <a href="#" id="btn-login" className="btn btn-lg rounded-3">{props.a1}</a>
+                            <a href="#" id="btn-signup" className="btn btn-lg rounded-3 ms-1">{props.a2}</a>
                         </div>
                     </li>
                 </ul>

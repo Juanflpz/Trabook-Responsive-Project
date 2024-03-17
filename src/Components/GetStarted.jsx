@@ -10,7 +10,7 @@ export default function GetStarted(props) {
                         <img src={require(`../images/img/${props.image}`)} className="traveler-img d-block mx-lg-auto img-fluid" loading="lazy" alt="Traveler"/>
                     </div>
                     <div className="col-lg-6">
-                        <h1 className="display-5 fw-bold lh-1 mb-3 text-start" id="title">Get started your exciting <span className="orange-color">journey</span> with us.</h1>
+                        <h1 className="display-5 fw-bold lh-1 mb-3 text-start" id="title">Get your exciting <span className="orange-color">journey</span> started with us.</h1>
                         <p className="lead text-start">A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
                             <button type="button" className="btn btn-primary btn-lg px-4 me-md-2" id="btn-discover">

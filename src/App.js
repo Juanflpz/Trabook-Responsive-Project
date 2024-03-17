@@ -24,9 +24,9 @@ function App() {
         li4={navbarData.li4}
         li5={navbarData.li5}
         a1={navbarData.a1}
-        a2={navbarData.a2}
-      />
-      <GetStarted image = {getStartedData.image1}/>
+        a2={navbarData.a2}/>
+      <GetStarted 
+        image = {getStartedData.image1}/>
       <h1>Dynamic Carousel</h1>
       <Carousel cards={cards} />
     </div>
