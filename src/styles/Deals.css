@@ -1,0 +1,103 @@
+.orange-color {
+    color: #FA7435;
+}
+
+.prf {
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.centered-title {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    color: #222;
+    font-size: 6vh;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 1.3vh;
+}
+
+.slider-btn {
+    border: none;
+}
+
+.arrows button {
+    background: white;
+    border: 1px solid #666;
+    border-radius: 50%;
+}
+
+.arrows button i {
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.arrows button:hover {
+    background: black;
+    border: none;
+}
+
+.arrows button:hover i {
+    color: white;
+}
+
+.arrows button:active {
+    background-color: white;
+    border: none;
+}
+
+.arrows button:active i {
+    color: #fa7436;
+}
+
+.discounts-carousel-card {
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    background: #fefcfb;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.discounts-carousel-card:hover {
+    box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
+}
+
+.carousel-img:hover {
+    filter: brightness(50%);
+}
+
+/*FFF*/
+.card-exclusive {
+    border: 1px solid #c0b7b79c !important;
+    background-color: white !important;
+}
+
+.oldprice {
+    font-size: 16px; 
+    text-decoration: line-through; 
+    width: 100px;
+}
+
+.price {
+    font-size: 16px; 
+    color: #FA7436; 
+    background-color: #fd883a8a; 
+    border-radius: 10%;
+}

@@ -1,0 +1,33 @@
+.logo-nav {
+    margin-right: 20vh;
+}
+
+nav {
+    background-color: #FDFCFA;
+}
+
+.sign-up {
+    margin-left: 8vh;
+}
+
+#btn-signup {
+    background-color: #FA7435;
+    color: white;
+    width: 150px;
+}
+
+#btn-login {
+    color: #FA7435;
+    width: 150px;
+}
+
+#btn-login:hover {
+    background-color: #fa7436;
+    color: white;
+}
+
+#btn-signup:hover {
+    background-color: white;
+    color: #fa7436;
+    border: 1px solid #fa7436;
+}

@@ -1,0 +1,65 @@
+.col {
+    margin-top: 80px; 
+    margin-left: 220px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.orange-color {
+    color: #FA7435;
+}
+
+.subtitle {
+    font-size: 20px
+}
+
+.col-img {
+    margin-top: 80px;
+}
+
+.image-left {
+    position: absolute;
+    left: 70%;
+}
+
+.cards-list {
+    margin-top: 50px;
+}
+
+.card-1 {
+    background-image: url('../images/img/Vector4857.png');
+    width: 23rem; 
+    height: 260px; 
+    border-radius: 3%;
+}
+
+.card-2 {
+    background-image: url('../images/img/Vector4856.png');
+    width: 23rem; 
+    height: 260px; 
+    border-radius: 3%; 
+    margin-left: 28px;
+}
+
+.card-3 {
+    background-image: url('../images/img/Vector4857.png');
+    width: 23rem; 
+    height: 260px; 
+    border-radius: 3%; 
+    margin-left: 28px;
+}
+
+.card-icon-top {
+    height: 50px;
+    width: 50px;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 19px;
+}
