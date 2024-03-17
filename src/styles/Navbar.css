@@ -1,23 +1,22 @@
 .logo-nav {
-    margin-right: 200px;
+    margin-right: 20vh;
 }
 
 nav {
-    height: 13%; 
     background-color: #FDFCFA;
 }
 
 .sign-up {
-    margin-left: 150px;
+    margin-left: 8vh;
 }
 
 #btn-signup {
     background-color: #FA7435;
     color: white;
-    width: 155px;
+    width: 150px;
 }
 
 #btn-login {
     color: #FA7435;
-    width: 155px;
+    width: 150px;
 }

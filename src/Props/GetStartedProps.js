@@ -1,6 +1,5 @@
 const data = {
-    image1: 'Main.png',
-    image2: 'Background-main.png',
+    image1: 'Traveler.png',
 };
 
 export default data;
