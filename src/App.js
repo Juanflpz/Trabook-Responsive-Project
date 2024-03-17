@@ -43,7 +43,6 @@ function App() {
       <Footer
         image1 = {footerProps.image1}
         image2 = {footerProps.image2}/>
-      
     </div>
   );
 }
