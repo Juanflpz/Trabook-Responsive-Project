@@ -10,6 +10,8 @@ import Needs from './Components/Needs.jsx';
 import needsData from './Props/NeedsProps.js';
 import Footer from './Components/Footer.jsx';
 import footerProps from './Props/FooterProps.js';
+import Deals from './Components/Deals.jsx';
+import dealsProps from './Props/DealsProps.js';
 
 function App() {
   const cards = [
@@ -36,6 +38,8 @@ function App() {
         image2 = {needsData.image2}
         image3 = {needsData.image3}
         image4 = {needsData.image4}/>
+      <Deals 
+        cards = {dealsProps}/>
       <Footer
         image1 = {footerProps.image1}
         image2 = {footerProps.image2}/>
@@ -44,6 +48,10 @@ function App() {
   );
 }
 
+/**
+ *  <h1>Dynamic Carousel</h1>
+      <Carousel cards={cards}/>
+ */
 /*
 <h1>Dynamic Carousel</h1>
       <Carousel cards={cards} />
