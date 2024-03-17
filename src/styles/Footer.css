@@ -21,9 +21,8 @@
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.social-media i {
+.social-media svg {
     color: black;
-    font-size: 1.5rem;
 }
 
 .social-media a:hover {
@@ -32,4 +31,22 @@
 
 .social-media a:hover i {
     color: white;
+}
+
+footer h5 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.social-media .btn {
+    width: 45px; /* Ajusta el tamaño del círculo */
+    height: 45px; /* Ajusta el tamaño del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media .btn svg {
+    width: 100%; /* Ajusta el tamaño del ícono para que llene el círculo */
+    height: auto; /* Ajusta el tamaño del ícono para que llene el círculo */
 }

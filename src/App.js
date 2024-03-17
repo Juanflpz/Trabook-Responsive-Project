@@ -6,6 +6,10 @@ import Carousel from './Components/Carousel.jsx';
 import navbarData from './Props/NavbarProps.js';
 import GetStarted from './Components/GetStarted.jsx';
 import getStartedData from './Props/GetStartedProps.js'
+import Needs from './Components/Needs.jsx';
+import needsData from './Props/NeedsProps.js';
+import Footer from './Components/Footer.jsx';
+import footerProps from './Props/FooterProps.js';
 
 function App() {
   const cards = [
@@ -27,12 +31,23 @@ function App() {
         a2={navbarData.a2}/>
       <GetStarted 
         image = {getStartedData.image1}/>
-      <h1>Dynamic Carousel</h1>
-      <Carousel cards={cards} />
+      <Needs
+        image1 = {needsData.image1}
+        image2 = {needsData.image2}
+        image3 = {needsData.image3}
+        image4 = {needsData.image4}/>
+      <Footer
+        image1 = {footerProps.image1}
+        image2 = {footerProps.image2}/>
+      
     </div>
   );
 }
 
+/*
+<h1>Dynamic Carousel</h1>
+      <Carousel cards={cards} />
+      */
 //<img src={logo} className="App-logo" alt="logo" />
 
 /*

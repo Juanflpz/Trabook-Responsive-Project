@@ -1,12 +1,8 @@
 const data = {
-    li1: 'Home',
-    li2: 'About',
-    li3: 'Destination',
-    li4: 'Tour',
-    li5: 'Blog',
-    a1: 'Login',
-    a2: 'Sign up',
-    image: 'Logo-icon.png'
+    image1: 'Things-icon.png',
+    image2: 'Things-icon-1.png',
+    image3: 'Things-icon-2.png',
+    image4: 'Things-icon-3.png',
 };
 
 export default data;
