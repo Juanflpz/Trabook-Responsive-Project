@@ -1,12 +1,19 @@
 const data = {
-    li1: 'Home',
-    li2: 'About',
-    li3: 'Destination',
-    li4: 'Tour',
-    li5: 'Blog',
-    a1: 'Login',
-    a2: 'Sign up',
-    image: 'Logo-icon.png'
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
+    image1: 'Logo-icon.png',
 };
 
-export default data;
+const cards = [
+    { id: 1, image: 'Deals-card-1.png', title: 'Madrid', rate: '4.8', country: 'Spain', oldprice: '950', price: '850'},
+    { id: 2, image: 'Deals-card-2.png', title: 'Firenze', rate: '4.5', country: 'Italy', oldprice: '850', price: '750'},
+    { id: 3, image: 'Deals-card-3.png', title: 'Paris', rate: '4.4', country: 'France', oldprice: '699', price: '599'},
+    { id: 4, image: 'Deals-card-4.png', title: 'London', rate: '4.8', country: 'UK', oldprice: '950', price: '850'},
+];
+
+export default cards;
