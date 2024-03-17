@@ -50,21 +50,3 @@ footer h5 {
     width: 100%; /* Ajusta el tamaño del ícono para que llene el círculo */
     height: auto; /* Ajusta el tamaño del ícono para que llene el círculo */
 }
-
-.background-image-top-right {
-    top: 10px;
-    width: 113px;
-    height: 114px;
-    right: 0;
-    background-image: url('../images/img/palmeras.png');
-    z-index: -1;
-}
-
-.background-image-bottom-left {
-    bottom: 0;
-    left: 2px;
-    width: 480px;
-    height: 361px;
-    background-image: url('../images/img/circulos.png');
-    z-index: -1;
-}
