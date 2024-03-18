@@ -1,12 +1,7 @@
-const data = {
-    li1: 'Home',
-    li2: 'About',
-    li3: 'Destination',
-    li4: 'Tour',
-    li5: 'Blog',
-    a1: 'Login',
-    a2: 'Sign up',
-    image: 'Logo-icon.png'
-};
+const cards = [    
+    { id: 1, image: 'Deals-card-1.png', text: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or divertes no.', name: 'Mike taylor', city: 'Lahore', country: 'Pakistan'},
+    { id: 2, image: 'Deals-card-2.png', text: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or divertes no.', name: 'John Cena', city: 'Cairo', country: 'Egypt'},
+    { id: 3, image: 'Deals-card-3.png', text: 'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or divertes no.', name: 'Ozy Cena', city: 'CDX', country: 'Mexico'},
+];
 
-export default data;
+export default cards;
