@@ -11,8 +11,6 @@
     margin-top: 6vh;
     margin-bottom: 2vh;
 }
-.container {
-}
 
 .centered-title {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -70,7 +68,7 @@ p {
 }
 
 .arrows {
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 
 .discounts-carousel-card {
@@ -107,4 +105,8 @@ p {
     color: #FA7436; 
     background-color: #fd883a8a; 
     border-radius: 10%;
+}
+
+#vacation {
+    margin-top: 15vh;
 }

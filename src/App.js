@@ -12,6 +12,8 @@ import Footer from './Components/Footer.jsx';
 import footerProps from './Props/FooterProps.js';
 import Deals from './Components/Deals.jsx';
 import dealsProps from './Props/DealsProps.js';
+import Vacation from './Components/VacationPlan.jsx';
+import vacationProps from './Props/VacationPlanProps.js';
 import Reviews from './Components/Reviews.jsx';
 import reviewsProps from './Props/ReviewsProps.js';
 
@@ -41,13 +43,14 @@ function App() {
         image3 = {needsData.image3}
         image4 = {needsData.image4}/>
       <Deals 
-        cards = {dealsProps}/>      
+        cards = {dealsProps}/>   
+      <Vacation
+        cards = {vacationProps}/>
       <Reviews 
         cards = {reviewsProps}/>      
       <Footer
         image1 = {footerProps.image1}
         image2 = {footerProps.image2}/>
-      
     </div>
   );
 }

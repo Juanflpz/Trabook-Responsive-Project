@@ -2,93 +2,66 @@ import React from 'react'
 import '../styles/Deals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Deals({ cards }) {
+    const groupedCards = [];
+    for (let i = 0; i < cards.length; i += 4) {
+        groupedCards.push(cards.slice(i, i + 4));
+    }
+
     return (
-        <section id="destination">
-            <div className="container col-xxl-8">
-                <div className="title row">
+        <section id="vacation">
+            <div className="container col-xxl-8 my-5">
+                <div className="row">
                     <h3 className="centered-title">Exclusive <span className="orange-color">deals & discounts</span></h3>
                     <p className="prf">Discover our fantastic early booking discounts<br />& start planning your journey.</p>
                 </div>
                 <div className="container d-flex justify-content-center">
                     <div id="discounts-carousel" className="carousel carousel-dark slide d-none d-lg-block" data-bs-ride="carousel">
                         <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <div className="card-wrapper container-sm d-flex justify-content-around">
-                                    {cards.map(card => (
-                                        <div className="card discounts-carousel-card card-exclusive m-3">
-                                            <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img" alt="Madrid picture" />
-                                            <div className="card-body mb-1">
-                                                <div className="row my-2 pe-1">
-                                                    <div className="col-md-6">
-                                                        <h5 className="card-title">{card.title}</h5>
+                            {groupedCards.map((group, index) => (
+                                <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                                    <div className="card-wrapper container-sm d-flex justify-content-around">
+                                        {group.map(card => (
+                                            <div key={card.id} className="card discounts-carousel-card card-exclusive m-3">
+                                                <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img" alt={card.title} />
+                                                <div className="card-body mb-1">
+                                                    <div className="row my-2 pe-1">
+                                                        <div className="col-md-6">
+                                                            <h5 className="card-title">{card.title}</h5>
+                                                        </div>
+                                                        <div className="col-md-6 d-flex justify-content-end">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="me-2 pt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
+                                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                            </svg>
+                                                            <span className="text-muted">{card.rate}</span>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-md-6 d-flex justify-content-end">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="me-2 pt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                        </svg>
-                                                        <span className="text-muted">{card.rate}</span>
-                                                    </div>
-                                                </div>
-                                                <div className="row my-2 pe-1">
-                                                    <div className="col-md-6">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mb-1 svg-location bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                                                        </svg>
-                                                        <span className="card-text text-muted">{card.country}</span>
-                                                    </div>
-                                                    <div className="col-md-6 d-flex justify-content-end">
-                                                        <span className="card-text oldprice text-muted">${card.oldprice}</span>
-                                                        <span className="card-text price ms-2">${card.price}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <div className="card-wrapper container-sm d-flex justify-content-around">
-                                    {cards.map(card => (
-                                        <div className="card discounts-carousel-card card-exclusive m-3">
-                                            <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img" alt="Madrid picture" />
-                                            <div className="card-body mb-1">
-                                                <div className="row my-2 pe-1">
-                                                    <div className="col-md-6">
-                                                        <h5 className="card-title">{card.title}</h5>
-                                                    </div>
-                                                    <div className="col-md-6 d-flex justify-content-end">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className=" me-2 pt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                        </svg>
-                                                        <span className="text-muted">{card.rate}</span>
-                                                    </div>
-                                                </div>
-                                                <div className="row my-2 pe-1">
-                                                    <div className="col-md-6">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="svg-location bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                                                        </svg>
-                                                        <span className="text-muted">{card.country}</span>
-                                                    </div>
-                                                    <div className="col-md-6 d-flex justify-content-end">
-                                                        <span className="oldprice text-muted">${card.oldprice}</span>
-                                                        <span className="price ms-2">${card.price}</span>
+                                                    <div className="row my-2 pe-1">
+                                                        <div className="col-md-6">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mb-1 svg-location bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                                            </svg>
+                                                            <span className="card-text text-muted">{card.country}</span>
+                                                        </div>
+                                                        <div className="col-md-6 d-flex justify-content-end">
+                                                            <span className="card-text oldprice text-muted">${card.oldprice}</span>
+                                                            <span className="card-text price ms-2">${card.price}</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
+                            ))}
                         </div>
                         <div className="arrows d-flex justify-content-center">
                             <button className="btn slider-btn me-3 my-3 p-0 border-0" type="button" data-bs-target="#discounts-carousel" data-bs-slide="prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg-left-arrow bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="svg-left-arrow bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
                                 </svg>
                             </button>
                             <button className="btn slider-btn ms-3 my-3 p-0 border-0" type="button" data-bs-target="#discounts-carousel" data-bs-slide="next">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg-right-arrow bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="svg-right-arrow bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                                     <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
                                 </svg>
                             </button>
@@ -99,6 +72,101 @@ export default function Deals({ cards }) {
         </section>
     )
 }
+/*
+<section id="tour">
+            <div class="container col-xxl-8">
+                <div class="row align-items-center justify-content-center">
+                    <h3 class="centered-title">
+                        Best <b class="resaltar">vacation plan</b>
+                    </h3>
+                    <p class="prf">
+                        Plan your perfect vacation with our travel agency.
+                        Choose among hundreds of all-inclusive offers!
+                    </p>
+                </div>
+                <div class="flechas d-flex gap-2 pt-3 pb-4 justify-content-end">
+                    <button class="btn" href="#">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="btn" href="#">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 align-items-center justify-content-center">
+                    <div class="col col-sm-6 col-md-5 col-lg-4">
+                        <div class="card w-100 h-100">
+                            <img src="./img/rome1.png" class="card-img-top img-fluid rounded" alt="Rome, Italy" />
+                            <div class="card-body">
+                                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                    <h5 class="card-title">Rome, Italy</h5>
+                                    <h5 class="card-title plan-price">
+                                        $5,42k
+                                    </h5>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                    <p class="card-text">
+                                        <img src="./img/Navigation.svg" alt="Pointer" />
+                                        10 days trip
+                                    </p>
+                                    <p class="px-2 text-body-secondary">
+                                        <img src="./img/star_1.png" alt="Rank" />
+                                        4.8
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-5 col-lg-4">
+                        <div class="card w-100 h-100">
+                            <img src="./img/london21.png" class="card-img-top img-fluid rounded"
+                                alt="London, United Kingdom" />
+                            <div class="card-body">
+                                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                    <h5 class="card-title">London, UK</h5>
+                                    <h5 class="card-title plan-price">
+                                        $2,42k
+                                    </h5>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                    <p class="card-text">
+                                        <img src="./img/Navigation.svg" alt="Pointer" />
+                                        7 days trip
+                                    </p>
+                                    <p class="px-2 text-body-secondary">
+                                        <img src="./img/star_1.png" alt="Rank" />
+                                        4.7
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-5 col-lg-4">
+                        <div class="card w-100 h-100">
+                            <img src="./img/osaka1.png" class="card-img-top img-fluid rounded" alt="Osaka, Japan" />
+                            <div class="card-body">
+                                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                    <h5 class="card-title">Osaka, Japan</h5>
+                                    <h5 class="card-title plan-price">
+                                        $5,42k
+                                    </h5>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                                    <p class="card-text">
+                                        <img src="./img/Navigation.svg" alt="Pointer" />
+                                        10 days trip
+                                    </p>
+                                    <p class="px-2 text-body-secondary">
+                                        <img src="./img/star_1.png" alt="Rank" />
+                                        4.8
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+*/
 
 /*
 <div id="discounts-carousel-sm" className="carousel slide d-lg-none">
