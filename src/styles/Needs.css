@@ -63,3 +63,7 @@ h1{
 .card-text {
     font-size: 19px;
 }
+
+.cards {
+    justify-content: center;
+}

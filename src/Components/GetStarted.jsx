@@ -23,7 +23,7 @@ export default function GetStarted(props) {
             </div>
             <section>
                 <div className="container d-flex justify-content-center">
-                    <div className="card w-75 align-items-center px-3" id="floating-card">
+                    <div className="card w-80 align-items-center px-5" id="floating-card">
                         <div className="row">
                             <div className="col-lg">
                                 <div className="card-body row text-start">

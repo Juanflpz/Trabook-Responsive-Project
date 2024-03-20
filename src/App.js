@@ -3,11 +3,11 @@ import './App.css';
 import Component from './Component';
 import Navbar from './Components/Navbar.jsx';
 import Carousel from './Components/Carousel.jsx';
-import navbarData from './Props/NavbarProps.js';
+import navbarProps from './Props/NavbarProps.js';
 import GetStarted from './Components/GetStarted.jsx';
-import getStartedData from './Props/GetStartedProps.js'
+import GetStartedProps from './Props/GetStartedProps.js'
 import Needs from './Components/Needs.jsx';
-import needsData from './Props/NeedsProps.js';
+import NeedsProps from './Props/NeedsProps.js';
 import Footer from './Components/Footer.jsx';
 import footerProps from './Props/FooterProps.js';
 import Deals from './Components/Deals.jsx';
@@ -42,21 +42,17 @@ function App() {
   return (
     <div className='App'>
       <Navbar
-        image={navbarData.image}
-        li1={navbarData.li1}
-        li2={navbarData.li2}
-        li3={navbarData.li3}
-        li4={navbarData.li4}
-        li5={navbarData.li5}
-        a1={navbarData.a1}
-        a2={navbarData.a2}/>
+        image={navbarProps.image}
+        li1={navbarProps.li1}
+        li2={navbarProps.li2}
+        li3={navbarProps.li3}
+        li4={navbarProps.li4}
+        li5={navbarProps.li5}
+        a1={navbarProps.a1}
+        a2={navbarProps.a2}/>
       <GetStarted 
-        image = {getStartedData.image1}/>
-      <Needs
-        image1 = {needsData.image1}
-        image2 = {needsData.image2}
-        image3 = {needsData.image3}
-        image4 = {needsData.image4}/>
+        image = {GetStartedProps.image1}/>
+      <Needs cards = {NeedsProps}/>
       <Deals 
         cards = {dealsProps}/>   
       <Vacation
