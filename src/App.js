@@ -16,6 +16,8 @@ import Vacation from './Components/VacationPlan.jsx';
 import vacationProps from './Props/VacationPlanProps.js';
 import Reviews from './Components/Reviews.jsx';
 import reviewsProps from './Props/ReviewsProps.js';
+import React, { useState } from 'react';
+
 
 function App() {
   const cards = [
@@ -23,6 +25,19 @@ function App() {
     { id: 2, title: 'Card 2', content: 'Content of Card 2' },
     { id: 3, title: 'Card 3', content: 'Content of Card 3' },
   ];
+
+  /*const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showRegisterForm, setShowRegisterForm] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLoginForm(true);
+    setShowRegisterForm(false);
+  };
+
+  const handleRegisterClick = () => {
+    setShowLoginForm(false);
+    setShowRegisterForm(true);
+  };*/
 
   return (
     <div className='App'>

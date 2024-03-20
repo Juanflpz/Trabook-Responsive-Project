@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/Navbar.css'
+import '../styles/Navbar.css';
+import Login from '../Components/Login.jsx';
+import Register from '../Components/Register.jsx';
+
 
 export default function Navbar(props) {
+    const [showLoginForm, setShowLoginForm] = useState(false);
+    const [showRegisterForm, setShowRegisterForm] = useState(false);
+
+    const handleLoginClick = () => {
+        setShowLoginForm(!showLoginForm);
+        setShowRegisterForm(false);
+    };
+
+    const handleRegisterClick = () => {
+        setShowLoginForm(false);
+        setShowRegisterForm(!showRegisterForm);
+    };
+
+    const closeLoginForm = () => {
+        setShowLoginForm(false);
+    };
+
+    const closeRegisterForm = () => {
+        setShowRegisterForm(false);
+    };
+    
     return (
         <div>
             <nav className="m-0 p-0">
@@ -27,12 +51,24 @@ export default function Navbar(props) {
                     </li>
                     <li className="sign-up">
                         <div className="btn-group mt-4 mb-4" role="group">
-                            <a href="#" id="btn-login" className="btn btn-lg rounded-3">{props.a1}</a>
-                            <a href="#" id="btn-signup" className="btn btn-lg rounded-3 ms-1">{props.a2}</a>
+                        <div className="btn-group mt-4 mb-4" role="group">
+                            <button onClick={handleLoginClick} id="btn-login" className="btn btn-lg rounded-3">{props.a1}</button>
+                            <button onClick={handleRegisterClick} id="btn-signup" className="btn btn-lg rounded-3 ms-1">{props.a2}</button>
+                        </div>
                         </div>
                     </li>
                 </ul>
             </nav>
+            {showLoginForm && (
+                <div className="form-floating" style={{ position: 'absolute', top: '90px', left: '980px', right: '150px', margin: '20px', zIndex: '1000'}}>
+                    <Login closeLoginForm={closeLoginForm} />
+                </div>
+            )}
+            {showRegisterForm && (
+                <div className="form-floating" style={{ position: 'absolute', top: '90px', left: 'auto', right: '0', margin: 'auto', zIndex: '1000' }}>
+                    <Register closeRegisterForm={closeRegisterForm} />
+                </div>
+            )}
         </div>
     )
 }
