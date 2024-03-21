@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Deals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Deals({ cards }) {
+    // Agrupar las tarjetas en grupos de cuatro
     const groupedCards = [];
     for (let i = 0; i < cards.length; i += 4) {
         groupedCards.push(cards.slice(i, i + 4));
@@ -297,3 +298,5 @@ export default function Deals({ cards }) {
                                             </div>
                                         </div>
                                         */
+    );
+}
