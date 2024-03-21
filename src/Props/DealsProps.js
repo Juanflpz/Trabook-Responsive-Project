@@ -19,7 +19,5 @@ const cards = [
     { id: 18, image: 'Deals-card-1.png', title: 'Madrid', rate: '4.8', country: 'Spain', oldprice: '950', price: '850'},
     { id: 19, image: 'Deals-card-1.png', title: 'Madrid', rate: '4.8', country: 'Spain', oldprice: '950', price: '850'},
     { id: 20, image: 'Deals-card-1.png', title: 'Madrid', rate: '4.8', country: 'Spain', oldprice: '950', price: '850'},
-
 ];
-
 export default cards;

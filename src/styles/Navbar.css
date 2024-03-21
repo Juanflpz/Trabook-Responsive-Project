@@ -31,3 +31,37 @@ nav {
     color: #fa7436;
     border: 1px solid #fa7436;
 }
+
+.button-login-u{
+    background-color: #fa7436;
+    border: none;    
+}
+
+.button-login-u:hover{
+    background-color: #fff;
+    color: #FA7435;
+    border: 1px solid #FA7435;
+
+}
+.button-register-u{
+    background-color: #fa7436;
+    border: none;    
+}
+
+.button-register-u:hover{
+    background-color: #fff;
+    color: #FA7435;
+    border: 1px solid #FA7435;
+
+}
+.button-close-u{
+    background-color: #fff;
+    color: #FA7435;
+    border: 1px solid #FA7435;
+    
+}
+
+.button-close-u:hover{
+    background-color: #fa7436;
+    border: none;
+}
