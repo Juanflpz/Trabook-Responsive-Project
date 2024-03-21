@@ -31,7 +31,7 @@ export default function Needs({ cards }) {
                                             <img src={require(`../images/icons/${card.image}`)} className="card-icon-top mt-4 ms-4" alt="Sign-up-icon" style={{ maxWidth: '100%', height: 'auto' }} />
                                             <div className="card-body mb-1">
                                                 <h4 className="card-title font-weight-bold mt-4 ms-2">{card.title}</h4>
-                                                <p className="card-text text-muted ms-2 mt-1" dangerouslySetInnerHTML={{ __html: card.description }}></p>
+                                                <p className="card-text-discounts text-muted ms-2 mt-1" dangerouslySetInnerHTML={{ __html: card.description }}></p>
                                             </div>
                                         </div>
                                     ))}

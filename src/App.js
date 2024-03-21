@@ -16,6 +16,8 @@ import Vacation from './Components/VacationPlan.jsx';
 import vacationProps from './Props/VacationPlanProps.js';
 import Reviews from './Components/Reviews.jsx';
 import reviewsProps from './Props/ReviewsProps.js';
+import Blog from './Components/Blog.jsx';
+import blogProps from './Props/BlogProps.js';
 import React, { useState } from 'react';
 
 
@@ -58,7 +60,9 @@ function App() {
       <Vacation
         cards = {vacationProps}/>
       <Reviews 
-        cards = {reviewsProps}/>      
+        cards = {reviewsProps}/> 
+      <Blog 
+        cards = {blogProps}/>
       <Footer
         image1 = {footerProps.image1}
         image2 = {footerProps.image2}/>
