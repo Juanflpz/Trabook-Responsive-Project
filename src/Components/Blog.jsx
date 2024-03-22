@@ -35,7 +35,6 @@ export default function Blog({ cards }) {
                                     ))}
                                 </div>
                             </div>
-
                         ))}
                     </div>
                 </div>

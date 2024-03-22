@@ -20,7 +20,6 @@ export default function LoginForm(props) {
     return (
         <>
             <div style={{background:'#f7f8fc', padding: '20px'}}>
-               
                     <>
                         <FloatingLabel
                             controlId="floatingInput"
@@ -45,7 +44,6 @@ export default function LoginForm(props) {
                         
                         <Button  className='button-login-u m-2' onClick={handleLogin}>Login</Button>                        
                         <Button  className='button-close-u m-2' onClick={handleClose}>Close</Button>
-                       
                     </>
                 
             </div>

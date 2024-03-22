@@ -12,13 +12,13 @@ export default function VacationPlan({ cards }) {
     return (
         <section id="vacation">
             <div className="container col-xxl-8">
-            <div class="row">
-                    <div class="col title text-center">
-                        <h1>Best<span class="orange-color"> vacation plan</span></h1>
-                        <p class="subtitle text-muted pt-4">Plan your perfect vacation with our travel agency. Choose<br/> among hundreds of all-inclusive offers!</p>
+            <div className="row">
+                    <div className="col title text-center">
+                        <h1>Best<span className="orange-color"> vacation plan</span></h1>
+                        <p className="subtitle text-muted pt-4">Plan your perfect vacation with our travel agency. Choose<br/> among hundreds of all-inclusive offers!</p>
                     </div>
-                    <div class="col-md-2 d-flex justify-content-start palm-icon">
-                        <img src={require(`../images/icons/palm-icon.png`)} alt="icon" class="image-left"/>
+                    <div className="col-md-2 d-flex justify-content-start palm-icon">
+                        <img src={require(`../images/icons/palm-icon.png`)} alt="icon" className="image-left"/>
                     </div>
                 </div>
                 <div className="container d-flex justify-content-center">
@@ -47,18 +47,18 @@ export default function VacationPlan({ cards }) {
                                                         <h5 className="card-title">{card.title}</h5>
                                                         <h5 className="card-title plan-price">${card.price}</h5>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cursor-icon bi bi-cursor-fill" viewBox="0 0 16 16">
+                                                    <div className="row">
+                                                        <div className="col-md-6">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="cursor-icon bi bi-cursor-fill" viewBox="0 0 16 16">
                                                                 <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
                                                             </svg>
-                                                            <span class="ms-2 text-muted">{card.duration}</span>
+                                                            <span className="ms-2 text-muted">{card.duration}</span>
                                                         </div>
-                                                        <div class="col-md-6 d-flex justify-content-end ">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
+                                                        <div className="col-md-6 d-flex justify-content-end ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
                                                                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                                             </svg>
-                                                            <span class="ms-1">{card.rate}</span>
+                                                            <span className="ms-1">{card.rate}</span>
                                                         </div>
                                                     </div>
                                                 </div>
