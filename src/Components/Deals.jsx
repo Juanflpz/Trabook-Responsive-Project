@@ -7,7 +7,7 @@ export default function Deals({ cards }) {
     for (let i = 0; i < cards.length; i += 4) {
         groupedCards.push(cards.slice(i, i + 4));
     }
-
+    
     return (
         <section id="vacation">
             <div className="container col-xxl-8 my-5">
