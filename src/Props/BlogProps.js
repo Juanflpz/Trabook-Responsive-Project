@@ -1,3 +1,22 @@
+const [data, setData] = useState([]);
+
+useEffect(() => {
+  async function loadData() {
+    const data = await fetchData();
+    setData(data);
+  }
+
+  loadData();
+}, []);
+
+return (
+  <div>
+    {data.map((item) => (
+      <p key={item.id}>{item.name}</p>
+    ))}
+  </div>
+);
+/*
 const data = {
     li1: 'Home',
     li2: 'About',
@@ -10,3 +29,4 @@ const data = {
 };
 
 export default data;
+*/
