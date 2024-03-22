@@ -1,0 +1,25 @@
+.blog-cards {
+    margin-top: 50px;
+}
+
+.blog-img {
+    height: 100%; 
+    width: auto;
+}
+
+.circles {
+    margin-top: 2rem;
+}
+
+.box-title {
+    font-size: 45px;
+}
+
+.img-blog {
+    height: 300px;
+    width: 300px;
+}
+
+.date-blog, .title-blog {
+    word-wrap: break-word;
+}

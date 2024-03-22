@@ -1,7 +1,12 @@
 import React from 'react'
 import '../styles/Blog.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Blog() {
+export default function Blog({ cards }) {
+    const groupedCards = [];
+    for (let i = 0; i < cards.length; i += 4) {
+        groupedCards.push(cards.slice(i, i + 4));
+    }
     return (
         <section className="blog p-5" id="blog-box">
             <div className="container text-center">
@@ -72,6 +77,7 @@ export default function Blog() {
             </ul>
             <div className="d-flex justify-content-center" style="margin-top: 10rem;">
                 <svg className="mb-5" height="14" viewBox="0 0 54 14"fill="none">
+
                     <circle cx="5" cy="7" r="5" fill="#E5E5E5" />
                     <circle cx="27" cy="7" r="7" fill="#FA7436" />
                     <circle cx="49" cy="7" r="5" fill="#E5E5E5" />

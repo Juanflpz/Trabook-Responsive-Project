@@ -1,5 +1,5 @@
 .col {
-    margin-top: 80px; 
+    margin-top: 7vh; 
     margin-left: 220px;
 }
 
@@ -60,6 +60,10 @@ h1{
     font-size: 20px;
 }
 
-.card-text {
+.card-text-discounts {
     font-size: 19px;
+}
+
+.cards {
+    justify-content: center;
 }
