@@ -1,5 +1,5 @@
 #navbar {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     /* Agrega padding arriba */
     position: fixed;
     /* Cambiado de position: sticky a position: fixed */
@@ -12,7 +12,7 @@
 }
 
 #navbar ul li:hover {
-    text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.5);
+    text-shadow: 0.5px 0.5px 2px rgba(203, 90, 10, 0.6);
 }
 
 nav {

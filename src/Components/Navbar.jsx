@@ -27,7 +27,7 @@ export default function Navbar({ props }) {
     };
 
     return (
-        <section id="navbar">
+        <div id="navbar">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
@@ -76,6 +76,6 @@ export default function Navbar({ props }) {
                     <Register closeRegisterForm={closeRegisterForm} />
                 </div>
             )}
-        </section>
+        </div>
     )
 }
