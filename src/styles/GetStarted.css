@@ -2,26 +2,13 @@
     color: #FA7435;
 }
 
-#btn-discover {
-    background-color: transparent;
-    color: #FA7435;
-    border-color: #FA7435;
-    width: 180px;
-    border-radius: 5px;
+.card-title-1, .card-title-2, .card-title-3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
-#get-started {
-    padding: 0 0 11px 0;
-    margin-top: 3vh;
-}
-
-#title {
-    font-size: 70px;
-}
-
-#btn-discover:hover {
-    background-color: #fa7436;
-    color: white;
+.card-title-1:hover, .card-title-2:hover, .card-title-3:hover {
+    text-shadow: 0.5px 0.5px 2px rgba(203, 90, 10, 0.6);
 }
 
 .traveler-img{
@@ -29,13 +16,12 @@
     height: 500;
 }
 
-#floating-card {
-    background-color: white;
-    border-radius: 1.5vh;
-    border: transparent;
-    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+#btn-discover {
+    background-color: transparent;
+    color: #FA7435;
+    border-color: #FA7435;
+    width: 180px;
+    border-radius: 5px;
 }
 
 #explore-btn {
@@ -52,7 +38,24 @@
     border: 1px solid #fa7436;
 }
 
-.card-title {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+#get-started {
+    padding-top: 8rem;
+}
+
+#title {
+    font-size: 70px;
+}
+
+#btn-discover:hover {
+    background-color: #fa7436;
+    color: white;
+}
+
+#floating-card {
+    background-color: white;
+    border-radius: 1.5vh;
+    border: transparent;
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
