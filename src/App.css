@@ -16,13 +16,6 @@ h1, h2, h3, h4, h5, h6 { /* Headers font */
   padding-bottom: 8rem;
 }
 
-
-
-#deals-discounts {
-  margin-top: 100px;
-  padding-bottom: 100px;
-}
-
 #vacation-plan {
   margin-top: 100px;
   padding-bottom: 100px;
@@ -30,29 +23,6 @@ h1, h2, h3, h4, h5, h6 { /* Headers font */
 
 #reviews {
   background-color: #F7F8FC !important;
-}
-
-.card-icon-top {
-  height: 50px;
-  width: 50px;
-}
-
-.svg-star {
-  color: rgb(245, 245, 19);
-}
-
-.svg-location {
-  color: rgba(151, 151, 147, 0.616);
-}
-
-.svg-right-arrow {
-  color: #FA7435;
-  height: 40px !important;
-}
-
-.svg-left-arrow {
-  color: rgb(202, 200, 200);
-  height: 40px !important;
 }
 
 .lead-dot {
@@ -78,11 +48,6 @@ h1, h2, h3, h4, h5, h6 { /* Headers font */
   left: 0;
   width: 100%; /* Toma el ancho completo del contenedor */
   opacity: 1; /* Opacidad de la imagen encima */
-}
-
-.card-exclusive {
-  border: 1px solid #c0b7b79c !important;
-  background-color: white !important;
 }
 
 .card-blog {
