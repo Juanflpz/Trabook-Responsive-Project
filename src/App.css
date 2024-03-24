@@ -16,10 +16,7 @@ h1, h2, h3, h4, h5, h6 { /* Headers font */
   padding-bottom: 8rem;
 }
 
-#things-u-need {
-  padding-bottom: 100px;
-  background-color: #F7F8FC !important;
-}
+
 
 #deals-discounts {
   margin-top: 100px;
@@ -99,37 +96,8 @@ footer {
   background: linear-gradient(to bottom, transparent 210px, #F7F8FC 210px);
 }
 
-footer a {
-  text-decoration: none;
-  color: #666666;
-}
-
 .brand-footer {
   font-family: 'Volkhov', serif;
-}
-
-#subscribe-box {
-  position: relative;
-  border: solid 1 black;
-  margin-bottom: 100px;
-  padding: 0;
-  background-color: #FA7436; 
-  color: white;
-  height: 416px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centrar verticalmente */
-  align-items: center; /* Centrar horizontalmente */
-  border-radius: 13px;
-  z-index: 1;
-  text-align: center;
-}
-
-.background-image-top-right,
-.background-image-bottom-left {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*

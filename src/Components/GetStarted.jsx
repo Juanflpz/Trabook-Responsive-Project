@@ -28,7 +28,7 @@ export default function GetStarted({ props }) {
                                     <div className="card-body row text-start">
                                         <div className="d-flex align-items-center">
                                             <h6 className="card-title-1">{props.item1}</h6>
-                                            <svg className="mx-2 mb-2" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                            <svg className="mx-2 mb-1" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                                                 <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </div>
@@ -39,7 +39,7 @@ export default function GetStarted({ props }) {
                                     <div className="card-body row text-start">
                                         <div className="d-flex align-items-center">
                                             <h6 className="card-title-2">{props.item2}</h6>
-                                            <svg className="mx-2 mb-2" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                            <svg className="mx-2 mb-1" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                                                 <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </div>
@@ -50,7 +50,7 @@ export default function GetStarted({ props }) {
                                     <div className="card-body row text-start">
                                         <div className="d-flex align-items-center">
                                             <h6 className="card-title-3">{props.item3}</h6>
-                                            <svg className="mx-2 mb-2" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                            <svg className="mx-2 mb-1" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                                                 <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </div>
