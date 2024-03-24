@@ -1,26 +1,15 @@
 import React from 'react'
 import '../styles/Footer.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default function Footer(props) {
+
+export default function Footer({props}) {
     return (
         <footer>
-            <div className="container" id="subscribe-box">
-                <div className="col-md-6">
-                    <h1 className="col-md-12 pb-5">Subscribe and get exclusive deals & offers</h1>
-                    <div className="input-group position-relative">
-                        <span className="input-group-text border border-0 bg-white ps-3"><img src={require(`../images/img/${props.image1}`)} alt="Email icon" /></span>
-                        <input type="text" className="form-control form-control-lg pt-4 pb-4 ps-0 border-0 bg-white fs-6" placeholder="Enter your mail" aria-label="Example text with button addon" aria-describedby="button-addon1" />
-                        <button className="btn btn-outline-secondary position-absolute top-0 end-0 mx-2 mt-3 border-0 fs-6" type="button" id="button-addon1">Subscribe</button>
-                    </div>
-                </div>
-                <div className="background-image-top-right"></div>
-                <div className="background-image-bottom-left"></div>
-            </div>
             <div className="container">
                 <div className="row justify-content-center py-3">
                     <div className="col-sm-6 col-md mb-4">
                         <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                            <img src={require(`../images/img/${props.image2}`)} alt="Trabook logo" />
+                            <img src={require(`../images/img/${props.image}`)} alt="Trabook logo" />
                         </a>
                         <p className="text-body-secondary">Book your trip in a minute, get full control for much longer.</p>
                         <div className="social-media d-flex gap-3 pt-2 pb-1 justify-content-start">

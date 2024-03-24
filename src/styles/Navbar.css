@@ -1,13 +1,28 @@
+#navbar {
+    padding-top: 0.5rem; /* Agrega padding arriba */
+    /*padding-bottom: 3rem; /* Agrega padding abajo */
+}
+
+#navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .logo-nav {
     margin-right: 20vh;
 }
 
 nav {
+    height: 5rem;
+    position: fixed; /* Cambiado de position: sticky a position: fixed */
+    z-index: 1000; 
     background-color: #FDFCFA;
+    width: 100%;
 }
 
-.sign-up {
-    margin-left: 8vh;
+.signing {
+    margin-left: 10vh;
 }
 
 #btn-signup {
@@ -32,7 +47,8 @@ nav {
     border: 1px solid #fa7436;
 }
 
-.button-login-u{
+/*
+.button-login{
     background-color: #fa7436;
     border: none;    
 }
@@ -43,6 +59,7 @@ nav {
     border: 1px solid #FA7435;
 
 }
+
 .button-register-u{
     background-color: #fa7436;
     border: none;    
@@ -54,6 +71,7 @@ nav {
     border: 1px solid #FA7435;
 
 }
+
 .button-close-u{
     background-color: #fff;
     color: #FA7435;
@@ -65,3 +83,4 @@ nav {
     background-color: #fa7436;
     border: none;
 }
+*/ 

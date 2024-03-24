@@ -1,11 +1,11 @@
 const data = {
-    li1: 'Home',
-    li2: 'About',
-    li3: 'Destination',
-    li4: 'Tour',
-    li5: 'Blog',
-    a1: 'Login',
-    a2: 'Sign up',
+    link1: 'Home',
+    link2: 'Sections', /* things-u-need, deals and discounts, vacation plan, reviews, blog, subscribe */
+    link3: 'About',
+    link4: 'Subscribe',
+    link5: 'Blog',
+    btn_txt_1: 'Login',
+    btn_txt_2: 'Sign up',
     image: 'Logo-icon.png'
 };
 

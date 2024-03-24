@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/GetStarted.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function GetStarted(props) {
+export default function GetStarted({props}) {
     return (
         <section id="get-started">
             <div className="container col-xxl-8">

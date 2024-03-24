@@ -1,5 +1,5 @@
 const data = {
-    image1: 'Traveler.png',
+    image: 'Traveler.png',
 };
 
 export default data;
