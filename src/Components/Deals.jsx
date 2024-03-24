@@ -13,7 +13,7 @@ export default function Deals({ cards }) {
             <div className="container col-xxl-8 my-5">
                 <div className="row">
                     <h3 className="centered-title">Exclusive <span className="orange-color">deals & discounts</span></h3>
-                    <p className="prf">Discover our fantastic early booking discounts<br />& start planning your journey.</p>
+                    <p className="prf text-muted">Discover our fantastic early booking discounts<br/>& start planning your journey.</p>
                 </div>
                 <div className="container d-flex justify-content-center">
                     <div id="discounts-carousel" className="carousel carousel-dark slide d-none d-lg-block" data-bs-ride="carousel">
@@ -23,11 +23,11 @@ export default function Deals({ cards }) {
                                     <div className="card-wrapper container-sm d-flex justify-content-around">
                                         {group.map(card => (
                                             <div key={card.id} className="card discounts-carousel-card card-exclusive m-3">
-                                                <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img" alt={card.title} />
-                                                <div className="card-body mb-1">
+                                                <img src={require(`../images/img/${card.image}`)} className="card-img-top img-deals rounded carousel-img" alt={card.title} />
+                                                <div className="card-deals-body mb-1">
                                                     <div className="row my-2 pe-1">
                                                         <div className="col-md-6">
-                                                            <h5 className="card-title">{card.title}</h5>
+                                                            <h5 className="card-title card-deals-title">{card.title}</h5>
                                                         </div>
                                                         <div className="col-md-6 d-flex justify-content-end">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="me-2 pt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
