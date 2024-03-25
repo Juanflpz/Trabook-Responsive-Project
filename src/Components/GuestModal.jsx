@@ -18,7 +18,6 @@ export default function GuestModal() {
             value={nomberGuest}
             onChange={(e) => setNumberGuest(e.target.value)}
         /> 
-      
         <Button className='m-2 btn-get-started' onClick={handleGuest}>Add number of guests</Button>
         </Modal.Dialog>
     </div>

@@ -5,6 +5,11 @@
 .card-title-1, .card-title-2, .card-title-3 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    font-size: 2vh;
+}
+
+.subitem-text{
+    font-size: 2vh
 }
 
 .card-title-1:hover, .card-title-2:hover, .card-title-3:hover {
@@ -26,7 +31,7 @@
 
 #explore-btn {
     background-color: #fa7436;
-    height: 3.5rem;
+    height: 6vh;
     width: 100%;
     color: white;
     border-radius: 5px;
@@ -68,7 +73,7 @@
 }
 
 #get-started {
-    padding-top: 8rem;
+    padding-top: 6rem;
 }
 
 #title {
