@@ -23,7 +23,7 @@ export default function Needs({ cards }) {
             <div className="container cards">
                 <div className="row justify-content-center">
                     <div className='col-lg-11'>
-                        <div id="discounts-carousel" className="carousel carousel-dark slide d-none d-lg-block mx-auto" data-bs-ride="carousel">
+                        <div id="needs-carousel" className="carousel carousel-dark slide d-none d-lg-block mx-auto" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 {groupedCards.map((group, index) => (
                                     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
@@ -31,7 +31,7 @@ export default function Needs({ cards }) {
                                             {group.map(card => (
                                                 <div key={card.id} className={`card discounts-carousel-card card-exclusive m-3 ${index === 0 ? 'card-1' : 'card-2'}`}>
                                                     <img src={require(`../images/icons/${card.image}`)} className="card-icon-top mt-4 ms-4" alt="Sign-up-icon" style={{ maxWidth: '100%', height: 'auto' }} />
-                                                    <div className="card-body mb-1 ms-1 me-4">
+                                                    <div className="card-body mb-1 ms-1">
                                                         <h4 className="card-title-needs font-weight-bold mt-4 ms-2">{card.title}</h4>
                                                         <p className="card-text-needs text-muted ms-2 mt-1" dangerouslySetInnerHTML={{ __html: card.description }}></p>
                                                     </div>
