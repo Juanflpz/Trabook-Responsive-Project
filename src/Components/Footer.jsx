@@ -5,13 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Footer({props}) {
     return (
         <footer>
-            <div className="container">
-                <div className="row justify-content-center py-3">
-                    <div className="col-sm-6 col-md mb-4">
+            <div className="container pt-5">
+                <div className="row justify-content-center">
+                    <div className="col-sm-6 col-md">
                         <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                             <img src={require(`../images/img/${props.image}`)} alt="Trabook logo" />
                         </a>
-                        <p className="text-body-secondary">Book your trip in a minute, get full control for much longer.</p>
+                        <p className="text-body-secondary">{props.slogan}</p>
                         <div className="social-media d-flex gap-3 pt-2 pb-1 justify-content-start">
                             <a href="#" className="btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -35,16 +35,16 @@ export default function Footer({props}) {
                         <h5>Company</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.company_item_1}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Careers</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.company_item_2}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Logistic</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.company_item_3}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Privacy & Policy</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.company_item_4}</a>
                             </li>
                         </ul>
                     </div>
@@ -52,13 +52,13 @@ export default function Footer({props}) {
                         <h5>Contact</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Help/FAQ</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.contact_item_1}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Press</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.contact_item_2}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Affiliates</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.contact_item_3}</a>
                             </li>
                         </ul>
                     </div>
@@ -66,18 +66,18 @@ export default function Footer({props}) {
                         <h5>More</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Press Centre</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.more_item_1}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Our Blog</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.more_item_2}</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-body-secondary">Low fare tips</a>
+                                <a href="#" className="nav-link p-0 text-body-secondary">{props.more_item_3}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <div className="d-flex flex-column flex-sm-row justify-content-between py-2 border-top">
                     <p>© Trabook 2024. All rights reserved.</p>
                     <a href="#" className="nav-link px-2 text-body-secondary">Terms & Conditions</a>
                 </div>

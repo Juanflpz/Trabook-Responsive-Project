@@ -37,12 +37,6 @@ body {
   opacity: 1; /* Opacidad de la imagen encima */
 }
 
-footer {
-  width: 100%;
-  height: 898px; 
-  background: linear-gradient(to bottom, transparent 210px, #F7F8FC 210px);
-}
-
 .brand-footer {
   font-family: 'Volkhov', serif;
 }
