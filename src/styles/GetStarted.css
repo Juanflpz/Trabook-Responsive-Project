@@ -38,6 +38,35 @@
     border: 1px solid #fa7436;
 }
 
+.btn-get-started{
+    background-color: #fa7436;
+    height: 3.5rem;    
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-get-started:hover{
+    background-color: white;
+    color: #fa7436;
+    border: 1px solid #fa7436;
+}
+
+.btn-get-started-date{
+    background-color: #fa7436;
+    height: 3.5rem;  
+    width: 100%;  
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-get-started-date:hover{
+    background-color: white;
+    color: #fa7436;
+    border: 1px solid #fa7436;
+}
+
 #get-started {
     padding-top: 8rem;
 }
