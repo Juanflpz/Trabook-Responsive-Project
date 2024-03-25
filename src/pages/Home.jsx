@@ -15,8 +15,6 @@ import Subscribe from '../Components/Subscribe.jsx';
 import SubscribeProps from '../Props/SubscribeProps.js';
 
 export default function Home() {
-
-
     return (       
         <div >                  
             <GetStarted 
