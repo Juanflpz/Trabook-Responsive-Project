@@ -29,3 +29,7 @@
 .button-login-u, .email-input, .password-input {
     width: 40vh;
 }
+
+.input-label{
+    color: #FA7435;
+}
