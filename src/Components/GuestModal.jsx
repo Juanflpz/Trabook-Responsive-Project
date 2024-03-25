@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 
-export default function GuestModal() { 
+export default function GuestModal(props) { 
         
     
-    const [nomberGuest, setNumberGuest] = useState(""); 
+    const [numberGuest, setNumberGuest] = useState(""); 
 
-    const handleGuest= () => {
-        console.log("NomberGuest:", nomberGuest)
+    const handleGuest= () => {       
+        const guest = numberGuest;
+         props.handleGuest(guest);
         };
 
     return (
@@ -15,7 +16,7 @@ export default function GuestModal() {
         <Modal.Dialog>       
         <Form.Control
             type="number"           
-            value={nomberGuest}
+            value={numberGuest}
             onChange={(e) => setNumberGuest(e.target.value)}
         /> 
       

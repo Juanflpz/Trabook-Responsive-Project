@@ -9,6 +9,9 @@ export default function GetStarted({ props }) {
     const [showLocationModal, setShowLocationModal] = useState(false);
     const [showDateModal, setShowDateModal] = useState(false);
     const [showGuestModal, setShowGuestModal] = useState(false);
+    const [subitem1, setSubitem1] = useState(props.subitem1); 
+    const [subitem2, setSubitem2] = useState(props.subitem2); 
+    const [subitem3, setSubitem3] = useState(props.subitem3); 
     
     const handleLocationClick = () => {
         setShowLocationModal(!showLocationModal);
@@ -22,6 +25,35 @@ export default function GetStarted({ props }) {
         setShowGuestModal(!showGuestModal);
         
     };
+
+    const handleCity = (city) =>{
+        console.log("City:", city)
+        setSubitem1(city);
+        closeLocation()
+    }
+
+    const handleDate = (date) =>{
+        console.log("Date:", date)
+        setSubitem2(date);
+        closeDate()
+    }
+
+    const handleGuest = (guest) =>{
+        console.log("NumberGuest:", guest)
+        setSubitem3(guest);
+        closeGuest()
+    }
+
+    const closeLocation = () =>{
+        setShowLocationModal(false)
+    }
+
+    const closeDate = () =>{
+        setShowDateModal(false)
+    }
+    const closeGuest= () =>{
+        setShowGuestModal(false)
+    }
     
     return (
         <div id="get-started">
@@ -54,7 +86,7 @@ export default function GetStarted({ props }) {
                                             </svg>
                                             </div>
                                         </button>
-                                        <p className="card-text text-muted">{props.subitem1}</p>    
+                                        <p className="card-text text-muted">{subitem1}</p>    
                                     </div>
                                     
                                 </div>
@@ -68,7 +100,7 @@ export default function GetStarted({ props }) {
                                                 </svg>
                                             </div>
                                         </button>
-                                        <p className="card-text text-muted">{props.subitem2}</p>
+                                        <p className="card-text text-muted">{subitem2.toString()}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg">
@@ -81,7 +113,7 @@ export default function GetStarted({ props }) {
                                                 </svg>
                                             </div>
                                         </button>
-                                        <p className="card-text text-muted">{props.subitem3}</p>
+                                        <p className="card-text text-muted">{subitem3}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg d-flex justify-content-end">
@@ -96,18 +128,18 @@ export default function GetStarted({ props }) {
                     <div className="container d-flex justify-content-center position-relative">
                             {/* Modals */}
                             {showLocationModal && (
-                                <div className="form-floating" style={{ position: 'absolute', top: '100%', left: '20%', transform: 'translate(-58%, -28%)', zIndex: '1000' }}>
-                                    <LocationModal />
+                                <div className="form-floating" style={{ position: 'absolute', top: '100%', left: '20%', transform: 'translate(-58%, -182%)', zIndex: '1000' }}>
+                                    <LocationModal handleCity={handleCity}/>
                                 </div>                    
                             )}
                             {showDateModal && (
-                                <div className="form-floating" style={{ position: 'absolute', top: '80%', left: '35%', transform: 'translate(-24%, -10%)', zIndex: '1000' }}>
-                                    <DateModal />
+                                <div className="form-floating" style={{ position: 'absolute', top: '100%', left: '35%', transform: 'translate(-24%, -130%)', zIndex: '1000' }}>
+                                    <DateModal handleDate={handleDate} />
                                 </div>                    
                             )}
                             {showGuestModal && (
-                                <div className="form-floating" style={{ position: 'absolute', top: '50%', left: '60%', transform: 'translate(-42%, -28%)', zIndex: '1000' }}>
-                                    <GuestModal />
+                                <div className="form-floating" style={{ position: 'absolute', top: '100%', left: '60%', transform: 'translate(-42%, -182%)', zIndex: '1000' }}>
+                                    <GuestModal  handleGuest={handleGuest}/>
                                 </div>                    
                             )}
                     </div>
