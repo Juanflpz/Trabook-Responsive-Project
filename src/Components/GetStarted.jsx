@@ -33,7 +33,7 @@ export default function GetStarted({ props }) {
                         </div>
                         <div className="col-lg-6">
                             <h1 className="display-5 fw-bold lh-1 mb-4 text-start" id="title">Get your exciting <span className="orange-color">journey</span> started with us.</h1>
-                            <p className="lead subtitle">{props.subtitle}</p>
+                            <p className="text-muted subtitle">{props.subtitle}</p>
                             <div className="d-grid d-md-flex justify-content-md-start mt-4">
                                 <button type="button" className="btn btn-primary btn-lg me-md-2" id="btn-discover">{props.btn_txt_1}</button>
                             </div>

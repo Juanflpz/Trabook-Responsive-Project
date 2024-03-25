@@ -10,7 +10,7 @@ export default function Blog({ cards }) {
     return (
         <section className="blog p-3" id="blog-box">
             <div className="container text-center mt-5">
-                <h1 className="box-title"><b>Get updated with<span className="orange-color"> the latest blog</span></b></h1>
+                <h1 className="box-title carousel-title"><b>Get updated with<span className="orange-color"> the latest blog</span></b></h1>
             </div>
             <div className="container blog-cards">
                 <div id="discounts-carousel" className="carousel carousel-dark slide d-none d-lg-block" data-bs-ride="carousel">

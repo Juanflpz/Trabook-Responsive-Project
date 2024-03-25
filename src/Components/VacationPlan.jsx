@@ -14,8 +14,8 @@ export default function VacationPlan({ cards }) {
             <div className="container col-xxl-8">
                 <div className="row vacation-text">
                     <div className="col vacation-title text-center">
-                        <h1 className="title-vacation">Best<span className="orange-color"> vacation plan</span></h1>
-                        <p className="vacation-subtitle text-muted pt-4">Plan your perfect vacation with our travel agency. Choose<br /> among hundreds of all-inclusive offers!</p>
+                        <h1 className="title-vacation carousel-title">Best<span className="orange-color"> vacation plan</span></h1>
+                        <p className="vacation-subtitle subtitle text-muted pt-4">Plan your perfect vacation with our travel agency. Choose<br /> among hundreds of all-inclusive offers!</p>
                     </div>
                     <div className="col-md-2 d-flex justify-content-start palm-icon">
                         <img src={require(`../images/icons/palm-icon.png`)} alt="icon" className="image-left" />
