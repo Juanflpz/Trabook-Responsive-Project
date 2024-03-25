@@ -3,16 +3,19 @@ import { Modal, Button } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export default function DateModal() {
+export default function DateModal(props) {
     const [selectedDate, setSelectedDate] = useState(null);
     const [modalHeight, setModalHeight] = useState(null);
 
     const handleDateChange = (date) => {
-        setSelectedDate(date);
+        const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        setSelectedDate(formattedDate);
     };
 
-    const handleAddDate = () => {
-        console.log("Selected Date:", selectedDate);
+    const handleDate = () => {
+        console.log("Selected Date:", selectedDate);        
+        const date = selectedDate;
+        props.handleDate(date);
     };
 
     const handleCalendarOpen = () => {        
@@ -33,7 +36,7 @@ export default function DateModal() {
                     />
                 </Modal.Body>
                 <Modal.Footer className="d-flex justify-content-center">
-                    <Button className='m-2 btn-get-started-date' onClick={handleAddDate}>Add Date</Button>
+                    <Button className='m-2 btn-get-started-date' onClick={handleDate}>Add Date</Button>
                 </Modal.Footer>
             </Modal.Dialog>
         </div>
