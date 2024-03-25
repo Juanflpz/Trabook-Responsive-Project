@@ -1,58 +1,42 @@
 import './App.css';
 import Navbar from './Components/Navbar.jsx';
 import NavbarProps from './Props/NavbarProps.js';
-import GetStarted from './Components/GetStarted.jsx';
-import GetStartedProps from './Props/GetStartedProps.js'
-import Needs from './Components/Needs.jsx';
-import NeedsProps from './Props/NeedsProps.js';
-import Deals from './Components/Deals.jsx';
-import DealsProps from './Props/DealsProps.js';
-import Vacation from './Components/VacationPlan.jsx';
-import VacationProps from './Props/VacationPlanProps.js';
-import Reviews from './Components/Reviews.jsx';
-import ReviewsProps from './Props/ReviewsProps.js';
-import Blog from './Components/Blog.jsx';
-import BlogProps from './Props/BlogProps.js';
-import Subscribe from './Components/Subscribe.jsx';
-import SubscribeProps from './Props/SubscribeProps.js';
 import Footer from './Components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
 import FooterProps from './Props/FooterProps.js';
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
+
 
 function App() {
-  /*const [showLoginForm, setShowLoginForm] = useState(false);
-  const [showRegisterForm, setShowRegisterForm] = useState(false);
 
-  const handleLoginClick = () => {
-    setShowLoginForm(true);
-    setShowRegisterForm(false);
-  };
-
-  const handleRegisterClick = () => {
-    setShowLoginForm(false);
-    setShowRegisterForm(true);
-  };*/
+  function ScrollToTopOnPageChange() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
 
   return (
     <div className='App'>
+      <Router>
       <Navbar
         props = {NavbarProps}/>
-      <GetStarted 
-        props = {GetStartedProps}/>
-      <Needs 
-        cards = {NeedsProps}/>
-      <Deals 
-        cards = {DealsProps}/>   
-      <Vacation
-        cards = {VacationProps}/>
-      <Reviews 
-        cards = {ReviewsProps}/> 
-      <Blog 
-        cards = {BlogProps}/>
-      <Subscribe
-        props = {SubscribeProps}/>
+        <ScrollToTopOnPageChange />
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+        </Routes>
       <Footer
-        props = {FooterProps}/>
+      props = {FooterProps}/>
+      </Router>
+     
     </div>
   );
 }

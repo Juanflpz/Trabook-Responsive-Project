@@ -1,31 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Navbar.css';
-import Login from '../Components/Login.jsx';
-import Register from '../Components/Register.jsx';
+import { Link } from 'react-router-dom';
 
-export default function Navbar({ props }) {
-    const [showLoginForm, setShowLoginForm] = useState(false);
-    const [showRegisterForm, setShowRegisterForm] = useState(false);
-
-    const handleLoginClick = () => {
-        setShowLoginForm(!showLoginForm);
-        setShowRegisterForm(false);
-    };
-
-    const handleRegisterClick = () => {
-        setShowLoginForm(false);
-        setShowRegisterForm(!showRegisterForm);
-    };
-
-    const closeLoginForm = () => {
-        setShowLoginForm(false);
-    };
-
-    const closeRegisterForm = () => {
-        setShowRegisterForm(false);
-    };
-
+export default function Navbar({ props }) { 
     return (
         <div id="navbar">
             <nav class="navbar navbar-expand-lg">
@@ -39,8 +17,8 @@ export default function Navbar({ props }) {
                             <li className="logo-nav">
                                 <img className="nav-img" src={require(`../images/icons/${props.image}`)} alt="Logo-icon" />
                             </li>
-                            <li>
-                                <a className="mx-3 fs-5 nav-link font-weight-bold text-dark" href="#">{props.link1}</a>
+                            <li>                                
+                                <Link className="mx-3 fs-5 nav-link font-weight-bold text-dark" to = "/">{props.link1}</Link>
                             </li>
                             <li>
                                 <a className="mx-3 fs-5 nav-link font-weight-bold text-dark" href="#">{props.link2}</a>
@@ -57,8 +35,13 @@ export default function Navbar({ props }) {
                             <li className="signing">
                                 <div className="btn-group" role="group">
                                     <div className="btn-group" role="group">
-                                        <button onClick={handleLoginClick} id="btn-login" className="btn btn-lg rounded-3">{props.btn_txt_1}</button>
-                                        <button onClick={handleRegisterClick} id="btn-signup" className="btn btn-lg rounded-3 ms-1">{props.btn_txt_2}</button>
+                                        
+                                        <button id="btn-login" className="btn btn-lg rounded-3">
+                                            <Link   Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>{props.btn_txt_1}</Link>
+                                        </button>                                        
+                                        <button id="btn-signup" className="btn btn-lg rounded-3">
+                                            <Link   Link to="/register" style={{ textDecoration: 'none', color: 'inherit' }}>{props.btn_txt_2}</Link>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -66,16 +49,6 @@ export default function Navbar({ props }) {
                     </div>
                 </div>
             </nav>
-            {showLoginForm && (
-                <div className="form-floating" style={{ position: 'absolute', top: '90px', left: '980px', right: '150px', margin: '20px', zIndex: '1000' }}>
-                    <Login closeLoginForm={closeLoginForm} />
-                </div>
-            )}
-            {showRegisterForm && (
-                <div className="form-floating" style={{ position: 'absolute', top: '90px', left: 'auto', right: '0', margin: 'auto', zIndex: '1000' }}>
-                    <Register closeRegisterForm={closeRegisterForm} />
-                </div>
-            )}
         </div>
     )
 }
