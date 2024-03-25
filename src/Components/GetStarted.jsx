@@ -76,7 +76,7 @@ export default function GetStarted({ props }) {
                     <div className="container d-flex justify-content-center">
                         <div className="card align-items-center px-5" id="floating-card">
                             <div className="row">
-                                <div className="col-lg">
+                                <div className="col-lg-3 floating-col">
                                     <div className="card-body row text-start">
                                         <button className='btn' onClick={handleLocationClick}>
                                             <div className="d-flex align-items-center">
@@ -89,7 +89,7 @@ export default function GetStarted({ props }) {
                                         <p className="card-text subitem-text text-muted mb-1">{subitem1}</p>
                                     </div>
                                 </div>
-                                <div className="col-lg">
+                                <div className="col-lg-3 floating-col">
                                     <div className="card-body row text-start">
                                         <button className='btn' onClick={handleDateClick}>
                                             <div className="d-flex align-items-center">
@@ -102,7 +102,7 @@ export default function GetStarted({ props }) {
                                         <p className="card-text subitem-text text-muted mb-1">{subitem2.toString()}</p>
                                     </div>
                                 </div>
-                                <div className="col-lg">
+                                <div className="col-lg-3 floating-col">
                                     <div className="card-body row text-start">
                                         <button className='btn' onClick={handleGuestClick}>
                                             <div className="d-flex align-items-center">
@@ -115,7 +115,7 @@ export default function GetStarted({ props }) {
                                         <p className="card-text subitem-text text-muted mb-1">{subitem3}</p>
                                     </div>
                                 </div>
-                                <div className="col-lg d-flex justify-content-end">
+                                <div className="col-lg-3 floating-col d-flex justify-content-end">
                                     <div className="card-body">
                                         <button type="button" id="explore-btn" className="btn mt-2">{props.btn_txt_2}</button>
                                     </div>

@@ -93,3 +93,11 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+
+#floating-card {
+    width: 124vh /* Puedes ajustar este valor según tus necesidades */
+}
+
+.floating-col{
+    width: 29vh;
+}
