@@ -2,18 +2,27 @@
     padding-bottom: 6vh;
 }
 
-.vacation-title{
+.vacation-title {
     margin-left: 14rem;
 }
 
-.vacation-subtitle{
+.vacation-subtitle {
     font-size: 2vh;
 }
 
-h1{
-    font-size: 6vh; 
+.title-vacation {
+    font-size: 6vh;
 }
 
-.palm-icon{
-    margin-top: 80px;
+.palm-icon {
+    margin-top: 1rem;
+}
+
+.cursor-icon {
+    color: #FA7435;
+}
+
+.image-left {
+    position: absolute;
+    left: 70%;
 }
