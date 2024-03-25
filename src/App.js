@@ -9,9 +9,7 @@ import FooterProps from './Props/FooterProps.js';
 import React, { useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 
-
 function App() {
-
   function ScrollToTopOnPageChange() {
     const { pathname } = useLocation();
   
@@ -27,7 +25,7 @@ function App() {
       <Router>
       <Navbar
         props = {NavbarProps}/>
-        <ScrollToTopOnPageChange />
+        <ScrollToTopOnPageChange/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
@@ -36,22 +34,8 @@ function App() {
       <Footer
       props = {FooterProps}/>
       </Router>
-     
     </div>
   );
 }
 
 export default App;
-
-
-/*
-<Navbar
-        image={NavbarProps.image}
-        li1={NavbarProps.li1}
-        li2={NavbarProps.li2}
-        li3={NavbarProps.li3}
-        li4={NavbarProps.li4}
-        li5={NavbarProps.li5}
-        a1={NavbarProps.a1}
-        a2={NavbarProps.a2}/>
-*/
