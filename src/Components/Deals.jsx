@@ -12,8 +12,8 @@ export default function Deals({ cards }) {
         <section id="vacation">
             <div className="container col-xxl-8 my-5">
                 <div className="row">
-                    <h3 className="centered-title">Exclusive <span className="orange-color">deals & discounts</span></h3>
-                    <p className="prf text-muted">Discover our fantastic early booking discounts<br />& start planning your journey.</p>
+                    <h3 className="deals-title carousel-title">Exclusive <span className="orange-color">deals & discounts</span></h3>
+                    <p className="deals-subtitle text-muted subtitle">Discover our fantastic early booking discounts<br />& start planning your journey.</p>
                 </div>
                 <div className="container d-flex justify-content-center">
                     <div id="discounts-carousel" className="carousel carousel-dark slide d-none d-lg-block" data-bs-ride="carousel">

@@ -12,18 +12,18 @@ export default function GetStarted({ props }) {
     const [subitem1, setSubitem1] = useState(props.subitem1); 
     const [subitem2, setSubitem2] = useState(props.subitem2); 
     const [subitem3, setSubitem3] = useState(props.subitem3); 
-    
+
     const handleLocationClick = () => {
         setShowLocationModal(!showLocationModal);
-        
+
     };
     const handleDateClick = () => {
         setShowDateModal(!showDateModal);
-        
+
     };
     const handleGuestClick = () => {
         setShowGuestModal(!showGuestModal);
-        
+
     };
 
     const handleCity = (city) =>{
@@ -65,7 +65,7 @@ export default function GetStarted({ props }) {
                         </div>
                         <div className="col-lg-6">
                             <h1 className="display-5 fw-bold lh-1 mb-4 text-start" id="title">Get your exciting <span className="orange-color">journey</span> started with us.</h1>
-                            <p className="lead subtitle">{props.subtitle}</p>
+                            <p className="text-muted subtitle">{props.subtitle}</p>
                             <div className="d-grid d-md-flex justify-content-md-start mt-4">
                                 <button type="button" className="btn btn-primary btn-lg me-md-2" id="btn-discover">{props.btn_txt_1}</button>
                             </div>
@@ -80,15 +80,14 @@ export default function GetStarted({ props }) {
                                     <div className="card-body row text-start">
                                         <button className='btn' onClick={handleLocationClick}>
                                             <div className="d-flex align-items-center">
-                                            <h6 className="card-title-1">{props.item1}</h6>
-                                            <svg className="mx-2 mb-1" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                                                <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
+                                                <h6 className="card-title-1">{props.item1}</h6>
+                                                <svg className="mx-2 mb-1" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
                                             </div>
                                         </button>
-                                        <p className="card-text text-muted">{subitem1}</p>    
+                                        <p className="card-text subitem-text text-muted mb-1">{subitem1}</p>
                                     </div>
-                                    
                                 </div>
                                 <div className="col-lg">
                                     <div className="card-body row text-start">
@@ -100,7 +99,7 @@ export default function GetStarted({ props }) {
                                                 </svg>
                                             </div>
                                         </button>
-                                        <p className="card-text text-muted">{subitem2.toString()}</p>
+                                        <p className="card-text subitem-text text-muted mb-1">{subitem2.toString()}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg">
@@ -113,18 +112,18 @@ export default function GetStarted({ props }) {
                                                 </svg>
                                             </div>
                                         </button>
-                                        <p className="card-text text-muted">{subitem3}</p>
+                                        <p className="card-text subitem-text text-muted mb-1">{subitem3}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg d-flex justify-content-end">
                                     <div className="card-body">
-                                        <button type="button" id="explore-btn" className="btn">{props.btn_txt_2}</button>
+                                        <button type="button" id="explore-btn" className="btn mt-2">{props.btn_txt_2}</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="container d-flex justify-content-center position-relative">
                             {/* Modals */}
                             {showLocationModal && (
@@ -145,7 +144,7 @@ export default function GetStarted({ props }) {
                     </div>
 
                 </section>
-               
+
             </div>
         </div>
     )
