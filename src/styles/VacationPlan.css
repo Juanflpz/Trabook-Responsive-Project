@@ -1,15 +1,13 @@
-
-#vacation {
-    margin-top: 7vh;
-    margin-bottom: 7vh;
+.vacation-cards {
+    padding-bottom: 6vh;
 }
 
-.title{
-    margin-left: 220px;
+.vacation-title{
+    margin-left: 14rem;
 }
 
-.subtitle{
-    font-size: 20px
+.vacation-subtitle{
+    font-size: 2vh;
 }
 
 h1{

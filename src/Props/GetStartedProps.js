@@ -1,6 +1,6 @@
 const data = {
     image: 'Traveler.png',
-    title: 'Get your exciting <span className="orange-color">journey</span> started with us.',
+    //title: 'Get your exciting <span className="orange-color">journey</span> started with us.',
     subtitle: 'A Team of experienced tourism professionals will provide you with the best advice and tips for your desired place.',
     item1: 'Location',
     item2: 'Date',

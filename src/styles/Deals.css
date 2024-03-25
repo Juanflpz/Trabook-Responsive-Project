@@ -5,43 +5,82 @@
 .prf {
     text-align: center;
     font-size: 2.5vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.discounts-carousel-card {
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    background: #fefcfb;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.img-deals {
+    height: 270px;
+    width: 290px;
+}
+
+/*
 .title {
     margin-top: 6vh;
     margin-bottom: 2vh;
 }
-
+*/
+/*font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;*/
 .centered-title {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-weight: bold;
     color: #222;
     font-size: 6vh;
     text-align: center;
 }
 
-p {
-    color: #666;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.card-title {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.card-deals-title {
     font-weight: bold;
 }
 
-.card-body {
+.svg-star {
+    color: rgb(245, 245, 19);
+}
+
+.card-deals-body {
     padding: 1.3vh;
 }
 
-.slider-btn {
-    border: none;
+.discounts-carousel-card:hover {
+    box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
+}
+
+.carousel-img:hover {
+    filter: brightness(70%);
+}
+
+.svg-location {
+    color: rgba(151, 151, 147, 0.616);
+}
+
+/*FFF*/
+.card-exclusive {
+    border: 1px solid #c0b7b79c !important;
+    background-color: white !important;
 }
 
 .arrows button {
-    background: white;
-    border: 1px solid #666;
     border-radius: 50%;
+}
+
+.oldprice {
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    width: 100px;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #FA7436;
+    background-color: #fd883a8a;
+    border-radius: 10%;
 }
 
 .arrows button i {
@@ -50,7 +89,7 @@ p {
 }
 
 .arrows button:hover {
-    background: black;
+    background: #fa7436;
     border: none;
 }
 
@@ -67,46 +106,12 @@ p {
     color: #fa7436;
 }
 
-.arrows {
-    margin-bottom: 3vh;
+.svg-right-arrow {
+    color: rgb(202, 200, 200);
+    height: 40px !important;
 }
 
-.discounts-carousel-card {
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid rgba(102, 102, 102, 0.08);
-    background: #fefcfb;
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-
-.discounts-carousel-card:hover {
-    box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
-}
-
-.carousel-img:hover {
-    filter: brightness(50%);
-}
-
-/*FFF*/
-.card-exclusive {
-    border: 1px solid #c0b7b79c !important;
-    background-color: white !important;
-}
-
-.oldprice {
-    font-size: 16px; 
-    text-decoration: line-through; 
-    width: 100px;
-}
-
-.price {
-    font-size: 16px; 
-    color: #FA7436; 
-    background-color: #fd883a8a; 
-    border-radius: 10%;
-}
-
-#vacation {
-    margin-top: 15vh;
+.svg-left-arrow {
+    color: rgb(202, 200, 200);
+    height: 40px !important;
 }

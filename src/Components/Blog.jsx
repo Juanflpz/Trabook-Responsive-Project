@@ -8,8 +8,8 @@ export default function Blog({ cards }) {
         groupedCards.push(cards.slice(i, i + 4));
     }
     return (
-        <section className="blog p-5" id="blog-box">
-            <div className="container text-center">
+        <section className="blog p-3" id="blog-box">
+            <div className="container text-center mt-5">
                 <h1 className="box-title"><b>Get updated with<span className="orange-color"> the latest blog</span></b></h1>
             </div>
             <div className="container blog-cards">
@@ -23,12 +23,12 @@ export default function Blog({ cards }) {
                                             <img src={require(`../images/img/${card.image}`)} className="img-blog rounded img-fluid" alt="Blog picture" />
                                             <div className="row">
                                                 <div className="col-md-12 ms-2 me-4 mt-2 fw-bold">
-                                                    <p className="card-text title-blog" dangerouslySetInnerHTML={{ __html: card.title }}></p>
+                                                    <p className="card-text title-blog my-1" dangerouslySetInnerHTML={{ __html: card.title }}></p>
                                                 </div>
                                             </div>
                                             <div className="row">
                                                 <div className="col-md-12 mx-2 mb-2">
-                                                    <p className="card-text date-blog text-muted">{card.date}</p>
+                                                    <p className="card-text date-blog text-muted mb-1">{card.date}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -39,7 +39,7 @@ export default function Blog({ cards }) {
                     </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-center circles">
+            <div className="d-flex justify-content-center circles mb-5">
                 <svg className="" height="14" viewBox="0 0 54 14" fill="none">
                     <circle cx="5" cy="7" r="5" fill="#E5E5E5" />
                     <circle cx="27" cy="7" r="7" fill="#FA7436" />

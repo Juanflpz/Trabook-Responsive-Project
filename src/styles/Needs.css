@@ -26,9 +26,9 @@
     background-color: #F7F8FC !important;
 }
 
-.text-center {
+.needs-text {
     margin-top: 4rem;
-    margin-left: 13rem;
+    margin-left: 12.5rem;
 }
 
 .title-needs {
@@ -72,5 +72,5 @@
 }
 
 .card-text-needs {
-    font-size: 1.2rem;
+    font-size: 2.1vh;
 }

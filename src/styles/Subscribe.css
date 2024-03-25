@@ -1,7 +1,7 @@
 #subscribe-box {
     position: relative;
     border: solid 1 black;
-    margin-bottom: 100px;
+    margin-bottom: 4rem;
     padding: 0;
     background-color: #FA7436;
     color: white;
@@ -40,4 +40,16 @@
     height: 361px;
     background-image: url('../images/img/circulos.png');
     z-index: -1;
+}
+
+#button-suscribe:hover {
+    background-color: white;
+    color: #fa7436;
+}
+
+#button-suscribe {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #FA7436;
+    color: white;
 }
