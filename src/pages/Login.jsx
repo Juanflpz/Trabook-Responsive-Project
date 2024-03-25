@@ -17,7 +17,6 @@ export default function Login() {
             <section id='login-section' className='container-fluid'>
                 <div className="container-fluid d-flex justify-content-center align-items-center login-container">
                     <div className="card align-items-center px-5" id="floating-card">
-
                         <Form className='my-5'>
                             <h1 className='d-flex justify-content-center mb-4'>Login</h1>
                             <Form.Group className="email-input mb-3" controlId="formEmail">

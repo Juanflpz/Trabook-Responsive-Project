@@ -30,7 +30,9 @@ export default function Navbar({ props }) {
                                 <a className="mx-3 fs-5 nav-link font-weight-bold text-dark" href="#">{props.link4}</a>
                             </li>
                             <li>
-                                <a className="mx-3 fs-5 nav-link font-weight-bold text-dark" href="#">{props.link5}</a>
+                                <a className="mx-3 fs-5 nav-link font-weight-bold text-dark" href="#">
+                                    <Link   Link to="/extended-blog" style={{ textDecoration: 'none', color: 'inherit' }}>{props.link5}</Link>
+                                </a>
                             </li>
                             <li className="signing">
                                 <div className="btn-group" role="group">

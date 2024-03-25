@@ -5,6 +5,8 @@ import Footer from './Components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
+import ExtendedBlog from './pages/ExtendedBlog.jsx';
+import ExtendedBlogProps from './Props/ExtendedBlogProps.js';
 import FooterProps from './Props/FooterProps.js';
 import React, { useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
@@ -28,6 +30,7 @@ function App() {
         <ScrollToTopOnPageChange/>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/extended-blog" element={<ExtendedBlog articles = {ExtendedBlogProps}/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
         </Routes>
