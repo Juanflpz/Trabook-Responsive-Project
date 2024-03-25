@@ -35,8 +35,7 @@ export default function Navbar({ props }) {
                             <li className="signing">
                                 <div className="btn-group" role="group">
                                     <div className="btn-group" role="group">
-                                        
-                                        <button id="btn-login" className="btn btn-lg rounded-3">
+                                        <button id="btn-login" className="btn btn-lg rounded-3 me-2">
                                             <Link   Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>{props.btn_txt_1}</Link>
                                         </button>                                        
                                         <button id="btn-signup" className="btn btn-lg rounded-3">

@@ -12,26 +12,26 @@ export default function VacationPlan({ cards }) {
     return (
         <section id="vacation">
             <div className="container col-xxl-8">
-            <div className="row">
-                    <div className="col title text-center">
+                <div className="row vacation-text">
+                    <div className="col vacation-title text-center">
                         <h1>Best<span className="orange-color"> vacation plan</span></h1>
-                        <p className="subtitle text-muted pt-4">Plan your perfect vacation with our travel agency. Choose<br/> among hundreds of all-inclusive offers!</p>
+                        <p className="vacation-subtitle text-muted pt-4">Plan your perfect vacation with our travel agency. Choose<br /> among hundreds of all-inclusive offers!</p>
                     </div>
                     <div className="col-md-2 d-flex justify-content-start palm-icon">
-                        <img src={require(`../images/icons/palm-icon.png`)} alt="icon" className="image-left"/>
+                        <img src={require(`../images/icons/palm-icon.png`)} alt="icon" className="image-left" />
                     </div>
                 </div>
-                <div className="container d-flex justify-content-center">
+                <div className="container vacation-cards d-flex justify-content-center">
                     <div id="vacation-carousel" className="carousel carousel-dark slide d-none d-lg-block" data-bs-ride="carousel">
-                        <div class="arrows d-flex gap-2 justify-content-end">
+                        <div class="arrows d-flex gap-2 mb-4 me-1 justify-content-end">
                             <button className="btn slider-btn p-0 border-0" type="button" data-bs-target="#vacation-carousel" data-bs-slide="prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="svg-left-arrow bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                                    <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="svg-left-arrow bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
                                 </svg>
                             </button>
                             <button className="btn slider-btn mx-4 p-0 border-0" type="button" data-bs-target="#vacation-carousel" data-bs-slide="next">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="svg-right-arrow bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="svg-right-arrow bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
                                 </svg>
                             </button>
                         </div>

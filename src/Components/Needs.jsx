@@ -11,7 +11,7 @@ export default function Needs({ cards }) {
         <section className="" id="things-u-need">
             <div className="container">
                 <div className="row">
-                    <div className="col text-center">
+                    <div className="col text-center needs-text">
                         <h1 className="lh-1 title-needs">Things you need<span className="orange-color"> to do</span></h1>
                         <p className="subtitle text-muted pt-3">We ensure that you´ll embark on a perfectly planned,<br /> safe vacation at a price you can afford.</p>
                     </div>

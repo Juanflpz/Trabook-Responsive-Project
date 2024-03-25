@@ -1,20 +1,13 @@
 .blog-cards {
-    margin-top: 50px;
+    margin-top: 4rem;
 }
-
-/*
-.blog-img {
-    height: 100%; 
-    width: auto;
-}
-*/
 
 .circles {
     margin-top: 2rem;
 }
 
 .box-title {
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 .img-blog {
@@ -22,6 +15,7 @@
     width: 300px;
 }
 
-.date-blog, .title-blog {
+.date-blog,
+.title-blog {
     word-wrap: break-word;
 }
