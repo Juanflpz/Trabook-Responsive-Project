@@ -93,21 +93,25 @@ export default function GetStarted({ props }) {
                         </div>
                     </div>
                     
-                    {showLocationModal && (
-                    <div className="form-floating" style={{ position: 'absolute', top: '800px', left: '200px', right: 'auto', margin: 'auto', zIndex: '1000' }}>
-                        <LocationModal />
-                    </div>                    
-                    )}
-                    {showDateModal && (
-                    <div className="form-floating" style={{ position: 'absolute', top: '800px', left: '500px', right: 'auto', margin: 'auto', zIndex: '1000' }}>
-                        <DateModal />
-                    </div>                    
-                    )}
-                    {showGuestModal && (
-                    <div className="form-floating" style={{ position: 'absolute', top: '800px', left: '780px', right: 'auto', margin: 'auto', zIndex: '1000' }}>
-                        <GuestModal />
-                    </div>                    
-                    )}
+                    <div className="container d-flex justify-content-center position-relative">
+                            {/* Modals */}
+                            {showLocationModal && (
+                                <div className="form-floating" style={{ position: 'absolute', top: '100%', left: '20%', transform: 'translate(-58%, -28%)', zIndex: '1000' }}>
+                                    <LocationModal />
+                                </div>                    
+                            )}
+                            {showDateModal && (
+                                <div className="form-floating" style={{ position: 'absolute', top: '80%', left: '35%', transform: 'translate(-24%, -10%)', zIndex: '1000' }}>
+                                    <DateModal />
+                                </div>                    
+                            )}
+                            {showGuestModal && (
+                                <div className="form-floating" style={{ position: 'absolute', top: '50%', left: '60%', transform: 'translate(-42%, -28%)', zIndex: '1000' }}>
+                                    <GuestModal />
+                                </div>                    
+                            )}
+                    </div>
+
                 </section>
                
             </div>
