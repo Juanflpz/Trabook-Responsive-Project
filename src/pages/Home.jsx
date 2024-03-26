@@ -4,7 +4,6 @@ import GetStartedProps from '../Props/GetStartedProps.js'
 import Needs from '../Components/Needs.jsx';
 import NeedsProps from '../Props/NeedsProps.js';
 import Deals from '../Components/Deals.jsx';
-import DealsProps from '../Props/DealsProps.js';
 import Vacation from '../Components/VacationPlan.jsx';
 import VacationProps from '../Props/VacationPlanProps.js';
 import Reviews from '../Components/Reviews.jsx';
@@ -21,8 +20,7 @@ export default function Home() {
                 props = {GetStartedProps}/>
             <Needs 
                 cards = {NeedsProps}/>
-            <Deals 
-                cards = {DealsProps}/>   
+            <Deals />   
             <Vacation
                 cards = {VacationProps}/>
             <Reviews 
