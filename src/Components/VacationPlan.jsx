@@ -41,7 +41,7 @@ export default function VacationPlan({ cards }) {
                                     <div className="card-wrapper container-sm d-flex justify-content-around">
                                         {group.map(card => (
                                             <div key={card.id} className="card discounts-carousel-card card-exclusive">
-                                                <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img" alt={card.title} />
+                                                <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img vacation-img" alt={card.title} />
                                                 <div className="card-body">
                                                     <div className="d-flex flex-column flex-sm-row justify-content-between">
                                                         <h5 className="card-title">{card.title}</h5>
