@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 export default function Navbar({ props }) { 
     return (
         <div id="navbar">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+            <nav className="navbar navbar-expand-lg">
+                <div className="container">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
                         aria-controls="myNavbar" aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse" id="myNavbar">
+                    <div className="navbar-collapse collapse" id="myNavbar">
                         <ul className="d-flex flex-row list-unstyled align-items-center justify-content-center">
                             <li className="logo-nav">
-                                <img className="nav-img" src={require(`../images/icons/${props.image}`)} alt="Logo-icon" />
+                                <img className="nav-img" src={`../images/icons/${props.image}`} alt="Logo-icon" />
                             </li>
                             <li>                                
                                 <Link className="mx-3 fs-5 nav-link font-weight-bold text-dark" to = "/">{props.link1}</Link>

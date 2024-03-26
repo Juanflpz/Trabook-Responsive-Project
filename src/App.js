@@ -1,44 +1,66 @@
 import './App.css';
 import Navbar from './Components/Navbar.jsx';
 import NavbarProps from './Props/NavbarProps.js';
+import GetStarted from './Components/GetStarted.jsx';
+import GetStartedProps from './Props/GetStartedProps.js'
+import Needs from './Components/Needs.jsx';
+import NeedsProps from './Props/NeedsProps.js';
 import Footer from './Components/Footer.jsx';
-import Home from './pages/Home.jsx';
-import Login from './pages/Login.jsx';
-import Register from './pages/Register.jsx';
-import ExtendedBlog from './pages/ExtendedBlog.jsx';
-import ExtendedBlogProps from './Props/ExtendedBlogProps.js';
 import FooterProps from './Props/FooterProps.js';
-import React, { useEffect } from 'react';
-import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
+import Deals from './Components/Deals.jsx';
+import Vacation from './Components/VacationPlan.jsx';
+import VacationProps from './Props/VacationPlanProps.js';
+import Reviews from './Components/Reviews.jsx';
+import ReviewsProps from './Props/ReviewsProps.js';
+import Blog from './Components/Blog.jsx';
+import BlogProps from './Props/BlogProps.js';
 
 function App() {
-  function ScrollToTopOnPageChange() {
-    const { pathname } = useLocation();
-  
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-  
-    return null;
-  }
+  /*
+  const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showRegisterForm, setShowRegisterForm] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLoginForm(true);
+    setShowRegisterForm(false);
+  };
+
+  const handleRegisterClick = () => {
+    setShowLoginForm(false);
+    setShowRegisterForm(true);
+  };
+
+  console.info('LN 33 | App.js | Deals: ', Deals);
+  console.info('LN 34 | App.js | DealsProps: ', DealsProps);
+  */
 
   return (
     <div className='App'>
-      <Router>
       <Navbar
-        props = {NavbarProps}/>
-        <ScrollToTopOnPageChange/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/extended-blog" element={<ExtendedBlog articles = {ExtendedBlogProps}/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-        </Routes>
+        image={NavbarProps.image}
+        li1={NavbarProps.li1}
+        li2={NavbarProps.li2}
+        li3={NavbarProps.li3}
+        li4={NavbarProps.li4}
+        li5={NavbarProps.li5}
+        a1={NavbarProps.a1}
+        a2={NavbarProps.a2}/>
+      <GetStarted 
+        image = {GetStartedProps.image1}/>
+      <Needs cards = {NeedsProps}/>
+      <Deals />   
+      <Vacation
+        cards = {VacationProps}/>
+      <Reviews 
+        cards = {ReviewsProps}/> 
+      <Blog 
+        cards = {BlogProps}/>
       <Footer
-      props = {FooterProps}/>
-      </Router>
+        image1 = {FooterProps.image1}
+        image2 = {FooterProps.image2}/>
     </div>
   );
 }
 
 export default App;
+
