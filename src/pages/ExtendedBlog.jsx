@@ -35,7 +35,7 @@ export default function ExtendedBlog({ articles }) {
                 <p className='ext-blog-subtitle'>Explore the most exciting destinations and the best travel experiences with us.</p>
             </div>
             <section className="articles d-flex justify-content-center">
-                <div class="card article-card mb-5 mx-5">
+                <div className="card article-card mb-5 mx-5">
                     <div className='card-body row'>
                         <div className='col-3'>
                             <img src={require(`../images/img/extended-blog-0.jpg`)} className="img-ext-blog" alt="Imagen del artículo 1" />
