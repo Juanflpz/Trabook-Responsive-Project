@@ -1,14 +1,38 @@
-
 import React from 'react';
-import '../styles/VacationPlan.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
-export default function VacationPlan({ cards }) {
-    const groupedCards = [];
-    for (let i = 0; i < cards.length; i += 3) {
-        groupedCards.push(cards.slice(i, i + 3));
+const formatRates = (rates) => {
+    // Convierte las tasas a un formato más legible
+    if (rates >= 1000) {
+        return (rates / 1000).toFixed(1) + 'K';
+    } else {
+        return rates.toFixed(2);
     }
+};
 
+class Vacations extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: []
+    };
+  }
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData = () => {
+    axios.get('http://localhost:4001/api/vacations')
+      .then(response => {
+        this.setState({ data: response.data });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  };
+
+  render() {
     return (
         <section id="vacation">
             <div className="container col-xxl-8">
@@ -36,29 +60,36 @@ export default function VacationPlan({ cards }) {
                             </button>
                         </div>
                         <div className="carousel-inner">
-                            {groupedCards.map((group, index) => (
-                                <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                    <div className="card-wrapper container-sm d-flex justify-content-around">
-                                        {group.map(card => (
-                                            <div key={card.id} className="card discounts-carousel-card card-exclusive">
-                                                <img src={require(`../images/img/${card.image}`)} className="card-img-top rounded carousel-img vacation-img" alt={card.title} />
+                                    {this.state.data.length > 0 && this.state.data.reduce((groups, item, index) => {
+                                        if (index % 4 === 0) {
+                                        groups.push([]);
+                                        }
+                                        const groupIndex = Math.floor(index / 4);
+                                        groups[groupIndex].push(item);
+                                        return groups;
+                                    }, []).map((group, groupIndex) => (
+                                        <div key={groupIndex} className={`carousel-item ${groupIndex === 0 ? 'active' : ''}`}>
+                                        <div className="card-wrapper container-sm d-flex justify-content-around">
+                                            {group.map(item => (
+                                            <div key={item.id} className="card discounts-carousel-card card-exclusive m-3">
+                                                <img src={`../images/cities/${item.images}`} className="card-img-top img-vacations rounded carousel-img" alt={item.city} />
                                                 <div className="card-body">
                                                     <div className="d-flex flex-column flex-sm-row justify-content-between">
-                                                        <h5 className="card-title">{card.title}</h5>
-                                                        <h5 className="card-title plan-price">${card.price}</h5>
+                                                        <h5 className="card-title">{item.city}, {item.country}</h5>
+                                                        <h5 className="card-title plan-price">${formatRates(item.rates)}</h5>
                                                     </div>
                                                     <div className="row">
                                                         <div className="col-md-6">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="cursor-icon bi bi-cursor-fill" viewBox="0 0 16 16">
                                                                 <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
                                                             </svg>
-                                                            <span className="ms-2 text-muted">{card.duration}</span>
+                                                            <span className="ms-2 text-muted">{item.duration}</span>
                                                         </div>
                                                         <div className="col-md-6 d-flex justify-content-end ">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mt-1 svg-star bi bi-star-fill" viewBox="0 0 16 16">
                                                                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                                             </svg>
-                                                            <span className="ms-1">{card.rate}</span>
+                                                            <span className="ms-1">{item.qualification}</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -73,4 +104,7 @@ export default function VacationPlan({ cards }) {
             </div>
         </section>
     );
+  }
 }
+
+export default Vacations;
