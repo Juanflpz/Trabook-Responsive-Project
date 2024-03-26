@@ -10,7 +10,6 @@ import VacationProps from '../Props/VacationPlanProps.js';
 import Reviews from '../Components/Reviews.jsx';
 import ReviewsProps from '../Props/ReviewsProps.js';
 import Blog from '../Components/Blog.jsx';
-import BlogProps from '../Props/BlogProps.js';
 import Subscribe from '../Components/Subscribe.jsx';
 import SubscribeProps from '../Props/SubscribeProps.js';
 
@@ -27,8 +26,7 @@ export default function Home() {
                 cards = {VacationProps}/>
             <Reviews 
                 cards = {ReviewsProps}/> 
-            <Blog 
-                cards = {BlogProps}/>
+            <Blog />
             <Subscribe
                 props = {SubscribeProps}/>              
         </div>       
