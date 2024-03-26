@@ -12,8 +12,8 @@ export default function Needs({ cards }) {
             <div className="container">
                 <div className="row">
                     <div className="col text-center needs-text">
-                        <h1 className="lh-1 title-needs">Things you need<span className="orange-color"> to do</span></h1>
-                        <p className="subtitle text-muted pt-3">We ensure that you´ll embark on a perfectly planned,<br /> safe vacation at a price you can afford.</p>
+                        <h1 className="lh-1 title-needs carousel-title">Things you need<span className="orange-color"> to do</span></h1>
+                        <p className="subtitle text-muted pt-3 subtitle">We ensure that you´ll embark on a perfectly planned,<br /> safe vacation at a price you can afford.</p>
                     </div>
                     <div className="icon-needs col-md-2">
                         <img src={require(`../images/icons/Things-icon.png`)} alt="icon" className="image-left" />
@@ -27,7 +27,7 @@ export default function Needs({ cards }) {
                             <div className="carousel-inner">
                                 {groupedCards.map((group, index) => (
                                     <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                        <div className="card-wrapper container-sm d-flex">
+                                        <div className="card-wrapper container-sm d-flex card-needs">
                                             {group.map(card => (
                                                 <div key={card.id} className={`card discounts-carousel-card card-exclusive m-3 ${index === 0 ? 'card-1' : 'card-2'}`}>
                                                     <img src={require(`../images/icons/${card.image}`)} className="card-icon-top mt-4 ms-4" alt="Sign-up-icon" style={{ maxWidth: '100%', height: 'auto' }} />

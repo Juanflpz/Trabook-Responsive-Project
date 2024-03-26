@@ -31,16 +31,16 @@
     margin-left: 12.5rem;
 }
 
+/*
 .title-needs {
-    font-size: 4rem;
 }
+
+.needs-subtitle {
+}
+*/
 
 .orange-color {
     color: #FA7435;
-}
-
-.subtitle {
-    font-size: 1.5rem !important;
 }
 
 .icon-needs {
@@ -73,4 +73,8 @@
 
 .card-text-needs {
     font-size: 2.1vh;
+}
+
+.card-needs{
+    width: 340vh;
 }

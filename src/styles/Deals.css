@@ -2,10 +2,8 @@
     color: #FA7435;
 }
 
-.prf {
+.deals-subtitle {
     text-align: center;
-    font-size: 2.5vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .discounts-carousel-card {
@@ -29,10 +27,9 @@
 }
 */
 /*font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;*/
-.centered-title {
+.deals-title {
     font-weight: bold;
     color: #222;
-    font-size: 6vh;
     text-align: center;
 }
 

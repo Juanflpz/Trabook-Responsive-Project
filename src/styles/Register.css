@@ -1,11 +1,10 @@
-#register{
-    padding-top: 4rem;    
-    padding-bottom: 4rem;   
+#register{ 
     height: 100%;
+    padding-top: 5vh;
 }
 
 #register-section{
-    height: 100vh;
+    height: 95vh;
 }
 
 #register-section h1{
@@ -15,7 +14,6 @@
 .register-contain{
     height: 100%;
 }
-
 
 .button-register-u {
     background-color: #fa7436;
@@ -30,5 +28,9 @@
 }
 
 .register-contain-form{
-    width: 500px;
+    width: 50vh;
+}
+
+.input-label{
+    color: #FA7435;
 }
