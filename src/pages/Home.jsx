@@ -5,7 +5,6 @@ import Needs from '../Components/Needs.jsx';
 import NeedsProps from '../Props/NeedsProps.js';
 import Deals from '../Components/Deals.jsx';
 import Vacation from '../Components/VacationPlan.jsx';
-import VacationProps from '../Props/VacationPlanProps.js';
 import Reviews from '../Components/Reviews.jsx';
 import ReviewsProps from '../Props/ReviewsProps.js';
 import Blog from '../Components/Blog.jsx';
@@ -20,8 +19,7 @@ export default function Home() {
             <Needs 
                 cards = {NeedsProps}/>
             <Deals />   
-            <Vacation
-                cards = {VacationProps}/>
+            <Vacation />
             <Reviews 
                 cards = {ReviewsProps}/> 
             <Blog />
